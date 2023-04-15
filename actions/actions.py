@@ -185,7 +185,7 @@ import requests
 # def get_weather(city):
     
 #     # API endpoint URL
-#     url = f'https://api.openweathermap.org/data/2.5/weather?q={city}&appid=<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>'
+#     url = f'https://api.openweathermap.org/data/2.5/weather?q={city}&appid=<>'
     
 #     # Send request to API
 #     response = requests.get(url)
@@ -225,7 +225,7 @@ import requests
 #     mydb=mysql.connector.connect(
 #         host="localhost",
 #         user="root",
-#         passwd=os.getenv('awantbhanu@'),
+#         passwd=os.getenv('passwd'),
 #         database="chatbot"
 #     )
 #     mycursor=mydb.cursor()
@@ -255,7 +255,7 @@ class DisplaywebAction(Action):
         nlp = spacy.load("en_core_web_md")
         user_input = tracker.latest_message.get("text")
         doc = nlp(user_input)
-        openai.api_key=os.getenv('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')
+        openai.api_key=os.getenv('api')
         completions=openai.Completion.create(engine='text-davinci-002',prompt=user_input,max_tokens=1500)
         message=completions.choices[0].text
         answer=message

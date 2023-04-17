@@ -218,6 +218,121 @@ stories:
   - intent: achievAth
   - action: utter_achieveA
 
+- story: self_balancing_bot
+  steps:
+  - intent: ask_self_balancing_bot
+  - action: utter_introselfbalancingbot
+
+- story: self_balancing_bot2
+  steps:
+  - intent: ask_self_balancing_bot_components
+  - action: utter_selfbalacingbot_comp
+
+- story: self_balancing_bot3
+  steps:
+  - intent: ask_self_balancing_bot_project_video_link
+  - action: utter_link_ssb
+  - action: action_open_ssb_video_link
+
+- story: self_balancing_bot4
+  steps:
+  - intent: ask_self_balancing_bot_applications
+  - action: utter_ssb_application
+
+- story: self_balancing_bot5
+  steps:
+  - intent: ask_self_balancing_bot_team
+  - action: utter_ssb_members
+
+- story: mcg_1
+  steps:
+  - intent: ask_music_genre
+  - action: utter_mgc_info
+
+- story: mcg_2
+  steps:
+  - intent: ask_members_mcg
+  - action: utter_mcg_members
+
+- story: mcg_3
+  steps:
+  - intent: VideoLink_mcg
+  - action: utter_link_mcg
+  - action: action_open_mcg_video_link
+
+- story: rcs_1
+  steps:
+  - intent: RubiksCubeSolverMembers
+  - action: utter_rcs_members
+
+- story: rcs_2
+  steps:
+  - intent: RubiksCubeSolverProject
+  - action: utter_rcs_info
+
+- story: rcs_3
+  steps:
+  - intent: RubiksCubeSolverVideoLink
+  - action: utter_link_rcs
+  - action: action_open_rcs_video_link
+
+- story: ats_1
+  steps:
+  - intent: TrafficAnalysisProjectInfo
+  - action: utter_ats_info
+
+- story: ats_2
+  steps:
+  - intent: TrafficAnalysisProjectMembers
+  - action: utter_ats_info
+
+- story: ats_3
+  steps:
+  - intent: TrafficAnalysisProjectLink
+  - action: utter_ats_link
+  - action: action_open_ats_video_link
+
+- story: vtt_1
+  steps:
+  - intent: VoiceToTranscriptProjectInfo
+  - action: utter_vtt_info
+
+- story: vtt_2
+  steps:
+  - intent: VoiceToTranscriptProjectMembers
+  - action: utter_vtt_info
+
+- story: vtt_3
+  steps:
+  - intent: VoiceToTranscriptProjectLink
+  - action: utter_vtt_link
+  - action: action_open_vtt_video_link
+
+- story: s1
+  steps:
+  - intent: MusicGenreProjectTimeSchedule
+  - action: utter_schedule_mcg
+
+- story: s2
+  steps:
+  - intent: TrafficAnalysisProjectTimeSchedule
+  - action: utter_schedule_ats
+
+- story: s3
+  steps:
+  - intent: RubiksCubeProjectTimeSchedule
+  - action: utter_schedule_rcs
+
+- story: s4
+  steps:
+  - intent: SelfBalancingBotProjectTimeSchedule
+  - action: utter_schedule_sbb
+
+- story: s5
+  steps:
+  - intent: VoiceToTranscriptProjectTimeSchedule
+  - action: utter_schedule_vtt
+
 - story: query_submit
   steps:
   - intent: nlu_fallback

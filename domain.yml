@@ -46,6 +46,28 @@ intents:
   - askplaces
   - inform
   - out_of_scope
+  - ask_self_balancing_bot
+  - ask_self_balancing_bot_components
+  - ask_self_balancing_bot_project_video_link
+  - ask_self_balancing_bot_applications
+  - ask_self_balancing_bot_team
+  - ask_music_genre
+  - ask_members_mcg
+  - VideoLink_mcg
+  - RubiksCubeSolverMembers
+  - RubiksCubeSolverProject
+  - RubiksCubeSolverVideoLink
+  - TrafficAnalysisProjectInfo
+  - TrafficAnalysisProjectMembers
+  - TrafficAnalysisProjectLink
+  - VoiceToTranscriptProjectMembers
+  - VoiceToTranscriptProjectLink
+  - VoiceToTranscriptProjectInfo
+  - MusicGenreProjectTimeSchedule
+  - TrafficAnalysisProjectTimeSchedule
+  - RubiksCubeProjectTimeSchedule
+  - SelfBalancingBotProjectTimeSchedule
+  - VoiceToTranscriptProjectTimeSchedule
 
 entities: 
   - name
@@ -120,6 +142,36 @@ actions:
   - utter_usermail
   - utter_query
   - utter_thanks2
+  - utter_selfbalacingbot_comp
+  - utter_introselfbalancingbot
+  - utter_link_ssb
+  - action_open_project_link_ssb_github
+  - utter_sbb_link
+  - action_open_ssb_video_link
+  - utter_ssb_application
+  - utter_ssb_members
+  - utter_mgc_info
+  - utter_mcg_members
+  - utter_link_mcg
+  - action_open_mcg_video_link
+  - RubiksCubeSolverProject
+  - utter_rcs_info
+  - utter_rcs_members
+  - utter_link_rcs
+  - action_open_rcs_video_link
+  - action_open_ats_video_link
+  - utter_ats_info
+  - utter_ats_members
+  - utter_ats_link
+  - action_open_vtt_video_link
+  - utter_vtt_info
+  - utter_vtt_members
+  - utter_vtt_link
+  - utter_schedule_sbb
+  - utter_schedule_ats
+  - utter_schedule_mcg
+  - utter_schedule_vtt
+  - utter_schedule_rcs
   # - utter_out_of_scope
   # - utter_askquery
   
@@ -406,6 +458,111 @@ responses:
   - text : "What is the query?"
   utter_thanks2:
   - text : "Thanks for providing the values"
+  utter_introselfbalancingbot:
+  - text : "The aim of this project is to make an automated vehicle that balances itself without any outside help or support.This project is a rather complex one as it involves using PID Control and involuted programming. Self-balancing robots are unique among all others, just because of their ability to balance on a given fixed position. Even if the robot is displaced from its position, it is programmed so that it again recovers its position.
+  \nTechnology used:\n
+  On Robot: Bluetooth, PID, TIMER Interrupt, Kalman Filter, Communication protocol (serial and I2C).\n
+  Features:\n
+           1.The robot balances on two wheels.\n
+           2.We can move the robot left, right, forward, and backward.\n
+           3.Option to set the PID constants from the onboard knob as well as wirelessly from the Android application.\n
+           4.The robot stands on its own with a servo motor for calibration when powered on.\n
+           5.We can reset the robot wirelessly in case it falls on the ground.\n
+           6.Used PORT control of Arduino for making the pin high and low as it is 60 times faster than the digitalWrite function of Arduino."
+  
+  utter_selfbalacingbot_comp:
+  - text : "MPU6050- MPU6050 is a three-axis accelerometer and three-axis gyroscope Micro Electro-mechanical system (MEMS). It aids in the measurement of velocity, orientation, acceleration, displacement, and other motion-related features.\n
+  Arduino Uno- Arduino UNO is a low-cost, flexible, and easy-to-use programmable open-source microcontroller board that can be integrated into a variety of electronic projects. This board can be interfaced with other Arduino boards, Arduino shields, and Raspberry Pi boards and can control relays, LEDs, servos, and motors as an output.\n
+  Drv8825 Motor driver- The Drv8825 is a complete micro-stepping motor driver with a built-in translator for easy operation. It is designed to operate bipolar stepper motors in full-, half-, quarter-, eighth-, and sixteenth-step modes, with an output drive capacity of up to 45 V and ±2.2 A.\n
+  Stepper Motor- Stepper motors are a type of DC synchronous motor. Whereas the rotation of an induction motor is largely uncontrollable, the rotation of a stepper motor can be controlled with a remarkable degree of precision. Stepper motors can produce full, instantaneous torque - even from a standstill.\n
+  Li-polymer battery- A lithium-polymer battery (LiPo) is a rechargeable battery that, in the case of true LiPo, uses solid polymer for the electrolyte and lithium for one of the electrodes. Commercially available LiPo is a hybrid- gel polymer or liquid electrolyte in a pouch format, more accurately termed a lithium-ion polymer battery.\n
+  Jumper wires- Jumper wires typically come in three versions- male-to-male, male-to-female and female-to-female. The difference between each is in the endpoint of the wire. Male ends have a pin protruding and can plug into things, while female ends do not and are used to plug things into.\n
+  \nRole of each software component-\n
+  MPU6050 Data: Initially MPU-6050 will measure the angle difference between the current position of the bot and its normal position. Now, this data is transferred to PID.\n
+  PID Tuning: PID will take input from MPU-6050 and accordingly calculate the PID value and give variable signals to both motors using interrupt service routine to bring the bot to its normal position and balance it.\n
+  Bluetooth Communication: Once the bot is balanced then we will send different commands ( forward, backward, turn left, turn right, and stop ) to the bot using Bluetooth communication to move the bot in different directions.\n
+  ISR Command: After receiving a command from Bluetooth, ISR will give different impulses to motors to move the bot according to the given command."
+  utter_link_ssb:
+  - text: "Opening  the project video link "
+  utter_sbb_link:
+  - text: "1.The robot balances on two wheels.\n
+           2.We can move the robot left, right, forward, and backward.\n
+           3.Option to set the PID constants from the onboard knob as well as wirelessly from the Android application.\n
+           4.The robot stands on its own with a servo motor for calibration when powered on.\n
+           5.We can reset the robot wirelessly in case it falls on the ground.\n
+           6.Used PORT control of Arduino for making the pin high and low as it is 60 times faster than the digitalWrite function of Arduino."
+  utter_ssb_application:
+  - text: "1.Self-balancing algorithms can be used in rocket propulsion systems.\n
+           2.Can be used in warehouses for moving goods.\n
+           3.It can be implemented on Segway.\n
+           4.It can be used for surveillance in any terrain."
+  utter_ssb_members:
+  - text: " The team members are:\n
+           1.Sudhanshu Ranjan\n
+           2.Abhishek Kumar Singh\n
+           3.Vikas"
+  utter_mcg_members:
+  - text: " The team members are:\n
+           1.Prakhar Agarwal\n
+           2.Alok Kumar Singh\n
+           3.Shreyansh sinha"
+
+  utter_mgc_info:
+  - text: "A music genre classifier is a software program that predicts the genre of a piece of music in audio format. These devices are used for tasks such as automatically tagging music for distributors such as Spotify and Billboard and determining appropriate background music for events. The ambiguity of genre classification makes machine intelligence well-suited to this task. Given enough audio data, of which large amounts can be easily harvested from freely available music online, machine learning can observe and make predictions using these ill-defined patterns. The goal of this project is to build a proof-of-concept music genre classifier using a deep learning approach that can correctly predict the genre and confidence level of Western music from popular candidate genres (classical, jazz, rap, rock, etc.. )."
+  
+  utter_link_mcg:
+  - text: "Opening  the project video link "
+
+  utter_rcs_info:
+  - text: "No info"
+  utter_rcs_members:
+  - text: "1.Ayush Srivastav\n
+           2.Pavan Kumar\n
+           3.Vinay Singh\n
+           4.Aniket Mohanty\n
+           5.Pandula suchir"
+
+  utter_link_rcs:
+  - text: "Opening  the project video link "
+
+  utter_ats_info:
+  - text: "No info"
+  utter_ats_members:
+  - text: "1.Aayush Verma\n
+           2.Priyansh Lohia\n
+           3.Rishi Mishra\n
+           4.Priyanshu Maurya"
+
+  utter_ats_link:
+  - text: "Opening  the project video link "
+
+  utter_vtt_info:
+  - text: "No info"
+  utter_vtt_members:
+  - text: "1.VAISHNAV ANISH\n
+           2.Divyanshi Singh\n
+           3.V Suhas\n
+           4.Kunwar Aridaman Singh\n
+           5.Amisha Singh"
+
+  utter_vtt_link:
+  - text: "Opening  the project video link "
+
+  utter_schedule_mcg:
+  - text: "no schedule set yet"
+
+  utter_schedule_ats:
+  - text: "no schedule set yet"
+
+  utter_schedule_vtt:
+  - text: "no schedule set yet"
+
+  utter_schedule_rcs:
+  - text: "no schedule set yet"
+
+  utter_schedule_sbb:
+  - text: "no schedule set yet"
+
   # utter_out_of_scope:
   # - text : "Sorry i didn't know that answer. searching web for results. "
   # utter_askquery:

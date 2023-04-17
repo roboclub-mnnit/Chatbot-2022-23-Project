@@ -8,7 +8,6 @@
 # This is a simple example for a custom action which utters "Hello World!"
 
 from typing import Any, Text, Dict, List
-
 from rasa_sdk import Action, Tracker
 from rasa_sdk.events import SlotSet, EventType
 from rasa_sdk.executor import CollectingDispatcher, Action
@@ -159,3 +158,121 @@ class DisplaywebAction(Action):
         DataUpdate(user_input,answer)
         print(user_input)
         return[]
+    
+class ActionOpenProjectLinkssbgh(Action):
+    def name(self) -> Text:
+        return "action_open_project_link_ssb_github"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        # Replace the `project_link` with the actual link to your self-balancing bot project
+        project_link = "https://github.com/roboclub-mnnit/SelfBalancingBot-2022-23-Project"
+        webbrowser.open(project_link)
+        dispatcher.utter_message(text=f"You can find the github repository  at this link: {project_link}")
+        return []
+    
+class ActionOpenVideoLink1(Action):
+    def name(self) -> Text:
+        return "action_open_ssb_video_link"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        # Extract the video link from the tracker
+        video_link = "https://youtu.be/lqwXdpySzbQ"
+
+        if video_link:
+            # Open the video link in a web browser
+            webbrowser.open(video_link)
+
+            # Send a message to the user acknowledging the action
+            dispatcher.utter_message(text=f"Sure! I've opened the video link for you. You can watch it [here]({video_link}).")
+        else:
+            # If video link is not available, send a message to the user
+            dispatcher.utter_message(text="Sorry, I couldn't find the video link.")
+
+        return []
+    
+class ActionOpenVideoLink2(Action):
+    def name(self) -> Text:
+        return "action_open_mcg_video_link"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        # Extract the video link from the tracker
+        video_link = "https://youtu.be/1MGkDt1iHKA"
+
+        if video_link:
+            # Open the video link in a web browser
+            webbrowser.open(video_link)
+
+            # Send a message to the user acknowledging the action
+            dispatcher.utter_message(text=f"Sure! I've opened the video link for you. You can watch it [here]({video_link}).")
+        else:
+            # If video link is not available, send a message to the user
+            dispatcher.utter_message(text="Sorry, I couldn't find the video link.")
+
+        return []
+    
+class ActionOpenVideoLink3(Action):
+    def name(self) -> Text:
+        return "action_open_rcs_video_link"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        # Extract the video link from the tracker
+        video_link = "https://youtu.be/1MGkDt1iHKA"
+
+        if video_link:
+            # Open the video link in a web browser
+            webbrowser.open(video_link)
+
+            # Send a message to the user acknowledging the action
+            dispatcher.utter_message(text=f"Sure! I've opened the video link for you. You can watch it [here]({video_link}).")
+        else:
+            # If video link is not available, send a message to the user
+            dispatcher.utter_message(text="Sorry, I couldn't find the video link.")
+
+        return []
+    
+class ActionOpenVideoLink4(Action):
+    def name(self) -> Text:
+        return "action_open_ats_video_link"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        # Extract the video link from the tracker
+        video_link = "https://youtu.be/1MGkDt1iHKA"
+
+        if video_link:
+            # Open the video link in a web browser
+            webbrowser.open(video_link)
+
+            # Send a message to the user acknowledging the action
+            dispatcher.utter_message(text=f"Sure! I've opened the video link for you. You can watch it [here]({video_link}).")
+        else:
+            # If video link is not available, send a message to the user
+            dispatcher.utter_message(text="Sorry, I couldn't find the video link.")
+
+        return []
+    
+class ActionOpenVideoLink5(Action):
+    def name(self) -> Text:
+        return "action_open_vtt_video_link"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker, domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        # Extract the video link from the tracker
+        video_link = "https://youtu.be/1MGkDt1iHKA"
+
+        if video_link:
+            # Open the video link in a web browser
+            webbrowser.open(video_link)
+
+            # Send a message to the user acknowledging the action
+            dispatcher.utter_message(text=f"Sure! I've opened the video link for you. You can watch it [here]({video_link}).")
+        else:
+            # If video link is not available, send a message to the user
+            dispatcher.utter_message(text="Sorry, I couldn't find the video link.")
+
+        return []

@@ -502,3 +502,442 @@ nlu:
     - hbzxbiugbixzbcIBSACIXBC
     - order me food
     - i don't know 
+
+ - intent: ask_self_balancing_bot
+   examples: |
+    - Can you give me a brief overview of  the self balancing bot project?
+    - I'm new to self balancing bot. Can you explain what they are?
+    - Tell me the basics of self balancing bot
+    - self balancing bot project
+    - I'm interested in learning about the fundamentals of self balancing bot.
+    - tell me something about self balancing bot project
+    - What do I need to know about self-balancing bots as a beginner?
+    - an introduction to self-balancing robot
+    - Explain the concept of self-balancing bots in simple terms
+    - I want to understand the fundamental principles of self-balancing bots.
+    - What are the key concepts behind self-balancing bots?
+    - Tell me the basics of how self-balancing bots work
+    - foundational aspects of self-balancing bots.
+    - give me an overview of self-balancing bot technology?
+    - What are the fundamental principles of balance in self-balancing bots?
+    - How do self-balancing bots maintain stability while moving?
+    - Can you explain the basic mechanics of self-balancing robots?
+    - I'm looking for a beginner-friendly introduction to self-balancing bots.
+
+ - intent: ask_self_balancing_bot_components
+   examples: |
+    - What are the main components of a self balancing bot?
+    - Can you list the key parts of a self balancing bot project?
+    - Tell me about the main elements that make up a self balancing bot.
+    - I'm curious about the hardware components used in a self balancing bot.
+    - What are the essential parts of a self balancing robot?
+    - what are the components used in self balancing bot project
+    - Can you explain the different components of a typical self-balancing bot?
+    - I want to know about the major building blocks of a self balancing bot projetc.
+    - Explain the key components of a self-balancing robot in detail.
+    - What are the essential modules or parts of a self-balancing bot?
+    - Tell me about the hardware requirements for building a self balancing robot.
+    - I'm interested in learning about the electronic components used in self-balancing bots.
+    - Can you provide an overview of the sensors and actuators used in self-balancing robots?
+    - Explain the different types of motors and sensors typically used in self-balancing bots.
+    - What are the main control units or boards used in self-balancing robots?
+    - Tell me about the structural components and chassis used in self-balancing bots.
+
+ - intent: ask_self_balancing_bot_project_video_link
+   examples: |
+    - Can you provide me with the link to the self balancing bot project?
+    - I'm interested in the project details of the self balancing bot. Where can I find the link?
+    - Could you share the project link for the self-balancing bot you mentioned earlier?
+    - I'd like to access the project page for the self balancing bot. What is the link?
+    - Can you direct me to the website or repository for the self-balancing bot project?
+    - I'm curious to learn more about the self balancing bot project. Can you give me the link?
+    - Where can I find more information about the self balancing bot project? Please share the link.
+    - I want to explore the details of the self-balancing bot project. What is the project link?
+    - Can you provide me with the URL for the self balancing bot project?
+    - I'd like to access the project documentation or source code for the self-balancing bot. What is the link?
+    - What is the website or GitHub repository for the self-balancing bot project?
+    - Can you direct me to the online resource where I can find the self-balancing bot project details?
+    - I'm interested in checking out the project page for the self-balancing bot. Where can I find the link?
+    - Please share the link to the project documentation or repository for the self-balancing bot.
+    - I want to visit the project website or GitHub page for the self-balancing bot. What is the link?
+    - Can you provide me with the video link of the self balancing bot project?
+    - I'm interested in watching the video of the self balancing bot project. Can you share the link?
+    - Where can I find the video of the self-balancing bot project?
+    - Do you have a video link for the self-balancing bot project?
+    - I want to watch the video of the self-balancing bot project. Please share the link.
+    - Could you share the video link for the self-balancing bot project?
+    - Can you provide me with the link to the video of the self-balancing bot project?
+    - I'm curious to watch the video of the self balancing bot project. Where can I find it?
+    - Please share the video link of the self balancing bot project.
+    - I would like to watch the video of the self balancing bot project. What's the link?
+    - Could you share the video link of the self balancing bot project with me?
+    - Can you provide me with the video link for the self-balancing bot project?
+    - I'm looking for the video link of the self balancing bot project. Can you help?
+    - Where can I watch the video of the self-balancing bot project?
+
+ - intent: ask_self_balancing_bot_applications
+   examples: |
+    - What are the applications of a self balancing bot project?
+    - Can you tell me the potential uses of a self balancing bot project?
+    - Where can self-balancing bots be applied?
+    - What are the practical applications of a self balancing bot project?
+    - How can self-balancing bots be utilized in real-world scenarios?
+    - List some possible applications of a self-balancing bot project.
+    - What are the practical uses of a self-balancing bot project?
+    - Can you give me some examples of where self balancing bots can be used?
+    - Tell me about the potential applications of a self-balancing bot project.
+    - Describe the practical uses of a self balancing bot project
+    - What are some real-world scenarios where self-balancing bots can be applied?
+    - List the potential applications of a self-balancing bot project
+    - What are some use cases for a self-balancing bot project?
+    - Can you provide me with examples of how self-balancing bots can be utilized?
+    - Tell me about the applications of self-balancing bots.
+
+ - intent: ask_self_balancing_bot_team
+   examples: |
+    - Who were the team members of the self balancing bot project?
+    - Can you tell me about the people who worked on the self balancing bot project?
+    - Who were involved in developing the self balancing bot project?
+    - List the team members of the self balancing bot project.
+    - Who were the individuals that worked on the self balancing bot project?
+    - Tell me about the team that developed the self-balancing bot project.
+    - Who were part of the team that worked on the self-balancing bot project?
+    - Can you provide me with the names of the people who contributed to the self-balancing bot project?
+    - Describe the team members of the self-balancing bot project.
+    - Who were the key individuals involved in the self-balancing bot project?
+    - List the team members or contributors of the self-balancing bot project.
+    - Who were the developers or team members of the self-balancing bot project?
+    - Can you tell me about the people who collaborated on the self-balancing bot project?
+    - Describe the individuals who worked on the self-balancing bot project.
+    - Who were the key contributors to the self-balancing bot project?
+
+ - intent: ask_music_genre
+   examples: |
+    - Can you tell me more about the music genre classification project?
+    - What is the project all about in terms of music genre classification?
+    - I'd like to know more about the music genre classification project
+    - Tell me about the details of the project's music genre classification
+    - What can you tell me about the project's approach to music genre classification?
+    - Provide me with an overview of the music genre classification project
+    - Explain the purpose of the project in the context of genre classification
+    - What is the main objective of the music genre classification project?
+    - I'm interested in learning about the project's methodology for genre classification
+    - What dataset is used in the music genre classification project?
+    - Tell me about the algorithm or model used in the project for genre classification
+    - What are the key features considered in the music genre classification project?
+    - How accurate is the music genre classification in the project?
+    - Tell me about the results or findings of the music genre classification project
+
+ - intent: ask_members_mcg
+   examples: |
+    - Who are the members of the music genre classification project?
+    - Tell me about the team working on the project
+    - Can you provide information about the people involved in the project?
+    - Tell me about the team behind the music genre classification project
+    - Who is responsible for the project?
+    - Who is working on the genre classification project?
+    - Give me details about the team members of the project
+    - I'd like to know more about the people working on the music genre classification project
+    - What can you tell me about the team involved in the project?
+    - What is the composition of the team working on the music genre classification project?
+    - Tell me about the members and their roles in the project
+    - Who makes up the team for the genre classification project?
+    - What roles do the team members play in the music genre classification project?
+    - Tell me about the responsibilities of the team members
+    - What are the roles and responsibilities of the team in the project?
+    - What are the backgrounds of the team members in the music genre classification project?
+    - Tell me about the expertise of the team members
+    - What qualifications do the team members have for the genre classification project?
+    - Are there any collaborators in the music genre classification project?
+    - Tell me about the partners or collaborators involved in the project
+    - Who is working with the team in the genre classification project?
+
+ - intent: VideoLink_mcg
+   examples: |
+    - Can you provide me with the video link for the music genre classification project?
+    - Where can I find the video link for the genre classification project?
+    - What is the URL of the video for the music genre classification project?
+    - How can I access the video link for the genre classification project?
+    - Is there a video available for the music genre classification project?
+    - Can you share the video link for the genre classification project?
+    - Can you direct me to the video for the music genre classification project?
+    - I'm interested in watching the video for the genre classification project, what's the link?
+    - Where can I go to find the video link for the music genre classification project?
+    - How do I access the video for the genre classification project?
+    - Can you provide me with the link showcasing the music genre classification project?
+    - Tell me about the link associated with the music genre classification project
+    - What is the  link for the project that demonstrates music genre classification?
+    - Can you provide me with the  link for the music genre classification project?
+    - Where can I find the link for the genre classification project?
+    - What is the URL of the video for the music genre classification project?
+    - How can I access the  link for the genre classification project?
+    - Is there a link available for the music genre classification project?
+    - Can you share the link for the genre classification project?
+    - Can you direct me to the link for the music genre classification project?
+    - I'm interested in watching the video for the genre classification project, what's the link?
+    - Where can I go to find thelink for the music genre classification project?
+    - How do I access the link for the genre classification project?
+    - Can you provide me with the link  showcasing the music genre classification project?
+    - I'd like to watch the genre classification project, can you provide the link?
+    - Tell me about the link associated with the music genre classification project
+    - What is the  link for the project that demonstrates music genre classification?
+
+ - intent: RubiksCubeSolverProject
+   examples: |
+    - Tell me more about the Rubik's Cube solver project.
+    - Can you provide information about the project that solves Rubik's Cube?
+    - Where can I find details about the Rubik's Cube solver project?
+    - What is the Rubik's Cube solver project about?
+    - Tell me about the project that solves Rubik's Cube.
+    - Can you share information about the Rubik's Cube solving project?
+    - I'm interested in learning more about the Rubik's Cube solver, can you provide details?
+    - How does the Rubik's Cube solver project work?
+    - Is there a webpage or website for the Rubik's Cube solver project?
+    - What is the purpose of the Rubik's Cube solver project?
+    - Can you direct me to the project page for the Rubik's Cube solver?
+    - How can I access more information about the Rubik's Cube solver project?
+    - I'd like to know more about the Rubik's Cube solver, can you provide details?
+    - Tell me about the Rubik's Cube solving project and how it works.
+    - Where can I find documentation or resources for the Rubik's Cube solver project?
+    - What is the progress on Rubiks Cube solving project?
+    - How far along is the Rubiks Cube solver project?
+    - Can you provide an update on the progress of the Rubiks Cube solver project?
+    - What is the latest status of the Rubiks Cube solving project?
+
+ - intent: RubiksCubeSolverMembers
+   examples: |
+    - Who are the members of the Rubik's Cube solver project?
+    - Can you tell me about the team working on the Rubik's Cube solver project?
+    - Who is involved in the development of the Rubik's Cube solving project?
+    - Can you provide information about the people working on the Rubik's Cube solver project?
+    - Tell me more about the individuals or team behind the Rubik's Cube solving project.
+    - Who is responsible for the Rubik's Cube solver project?
+    - Can you share details about the team members involved in the Rubik's Cube solving project?
+    - I'm curious about the people behind the Rubik's Cube solver, can you provide information?
+    - Who is leading the Rubik's Cube solver project?
+    - Tell me about the contributors or team members of the Rubik's Cube solver project.
+    - Can you provide an overview of the team working on the Rubik's Cube solver project?
+    - Who is driving the development of the Rubik's Cube solver project?
+    - I'd like to know more about the individuals or team members involved in the Rubik's Cube solver project.
+    - Can you tell me about the people responsible for the Rubik's Cube solving project?
+    - Who are the key members of the Rubik's Cube solver project and what are their roles?
+    - Who are the members of the Rubiks Cube solver project?
+    - Can you tell me about the team working on the Rubiks Cube solver project?
+    - Who is involved in the development of the Rubiks Cube solving project?
+    - Can you provide information about the people working on the Rubiks Cube solver project?
+    - Tell me more about the individuals or team behind the Rubiks Cube solving project.
+    - Who is responsible for the Rubiks Cube solver project?
+    - Can you share details about the team members involved in the Rubiks Cube solving project?
+    - I'm curious about the people behind the Rubiks Cube solver, can you provide information?
+    - Who is leading the Rubiks Cube solver project?
+    - Tell me about the contributors or team members of the Rubiks Cube solver project.
+    - Can you provide an overview of the team working on the Rubiks Cube solver project?
+    - Who is driving the development of the Rubiks Cube solver project?
+    - I'd like to know more about the individuals or team members involved in the Rubiks Cube solver project.
+    - Can you tell me about the people responsible for the Rubiks Cube solving project?
+    - Who are the key members of the Rubiks Cube solver project and what are their roles?
+
+ - intent: RubiksCubeSolverVideoLink
+   examples: |
+    - Can you provide the video link for the Rubik's Cube solver project?
+    - Where can I find the video showcasing the Rubik's Cube solver project?
+    - Is there a video demonstration of the Rubik's Cube solver project available?
+    - Can you share the link to the video showcasing the Rubik's Cube solver project?
+    - I'm interested in watching the video of the Rubik's Cube solver project, where can I find it?
+    - Could you please provide the video link for the Rubik's Cube solving project?
+    - Where can I watch the video demonstration of the Rubik's Cube solving project?
+    - Can you share the link to the video showcasing the Rubik's Cube solving project?
+    - I'd like to see the video of the Rubik's Cube solving project, where can I find it?
+    - Is there a video available that showcases the Rubik's Cube solver project? If yes, please provide the link.
+    - Can you tell me where I can watch the video of the Rubik's Cube solver project?
+    - Is there a video demonstration of the Rubik's Cube solver project that I can watch? If yes, please provide the link.
+    - Where can I find the video of the Rubik's Cube solving project? I'm interested in watching it.
+    - Can you provide the link to the video demonstrating the Rubik's Cube solving project?
+    - I'd like to watch the video demonstration of the Rubik's Cube solving project, can you share the link?
+    - Where can I find the video showcasing the Rubiks Cube solver project?
+    - Can you provide the video link for the Rubiks Cube solver project?
+    - Is there a video demonstration of the Rubiks Cube solver project available?
+    - Can you share the link to the video showcasing the Rubiks Cube solver project?
+
+ - intent: TrafficAnalysisProjectInfo
+   examples: |
+    - What is the project about for the autonomous traffic analysis system?
+    - Can you provide information about the project related to the autonomous traffic analysis system?
+    - I'm interested in learning more about the project involving the autonomous traffic analysis system.
+    - Tell me about the project that focuses on the autonomous traffic analysis system.
+    - Can you give me details about the project related to the autonomous traffic analysis system?
+    - What are the details of the project involving the autonomous traffic analysis system?
+    - I'd like to know more about the project related to the autonomous traffic analysis system.
+    - Can you share information about the autonomous traffic analysis system project?
+    - Tell me more about the project that utilizes the autonomous traffic analysis system.
+    - Can you provide project details for the autonomous traffic analysis system?
+    - I'm curious about the project that involves the autonomous traffic analysis system, can you tell me more?
+    - What is the project all about that uses the autonomous traffic analysis system?
+    - Can you share project information for the autonomous traffic analysis system?
+    - I'd like to learn more about the project utilizing the autonomous traffic analysis system.
+    - Tell me about the project that incorporates the use of the autonomous traffic analysis system.
+
+ - intent: TrafficAnalysisProjectMembers
+   examples: |
+    - Who are the members of the autonomous traffic analysis system project?
+    - Can you provide information about the team members working on the autonomous traffic analysis system project?
+    - Tell me about the individuals involved in the autonomous traffic analysis system project.
+    - Who is part of the project team for the autonomous traffic analysis system?
+    - Can you give me details about the members of the autonomous traffic analysis system project?
+    - I'd like to know more about the team members working on the autonomous traffic analysis system project.
+    - Can you share information about the project team for the autonomous traffic analysis system?
+    - Tell me more about the individuals involved in the project that utilizes the autonomous traffic analysis system.
+    - Can you provide the names of the team members for the autonomous traffic analysis system project?
+    - I'm curious about the members of the project that involves the autonomous traffic analysis system, can you tell me more?
+    - Who is part of the project team for the autonomous traffic analysis system?
+    - Can you share details about the individuals involved in the project that uses the autonomous traffic analysis system?
+    - I'd like to learn more about the team working on the autonomous traffic analysis system project.
+    - Tell me about the team members who are working on the project that incorporates the use of the autonomous traffic analysis system.
+
+ - intent: TrafficAnalysisProjectLink
+   examples: |
+    - Can you provide me with the video link for the autonomous traffic analysis system project?
+    - I'm interested in watching a video about the autonomous traffic analysis system project. Can you share the link?
+    - Where can I find the video link for the project related to the autonomous traffic analysis system?
+    - Can you give me the link to the video showcasing the autonomous traffic analysis system project?
+    - I'd like to watch a video about the project that involves the autonomous traffic analysis system. What's the link?
+    - How can I access the video link for the autonomous traffic analysis system project?
+    - Can you share the link to the website or video for the project utilizing the autonomous traffic analysis system?
+    - I'm curious about the video link for the project that incorporates the use of the autonomous traffic analysis system, can you provide it?
+    - Where can I find more information about the autonomous traffic analysis system project, such as a video link or website?
+    - Can you share the link to the video or website for the autonomous traffic analysis system project?
+    - I'd like to learn more about the project related to the autonomous traffic analysis system. Do you have a link to a video or website?
+    - Can you provide me with the link to the video or website for the project that uses the autonomous traffic analysis system?
+    - How can I access the video or website for the project that involves the autonomous traffic analysis system?
+    - Can you give me the link to the video or website showcasing the autonomous traffic analysis system project?
+    - I'm interested in finding the video or website link for the project utilizing the autonomous traffic analysis system. Can you help me with that?
+
+ - intent: VoiceToTranscriptProjectInfo
+   examples: |
+    - Tell me more about the deep learning voice-to-transcript model project.
+    - What can you tell me about the project that involves a voice to transcript model?
+    - I'm curious about the details of the project that uses a voice to transcript model. Can you provide more information?
+    - Can you give me an overview of the deep learning voice to transcript model project?
+    - Tell me about the project that incorporates the use of a voice to transcript model.
+    - I'd like to know more about the project related to the voice to transcript model. Can you provide some details?
+    - What is the voice to transcript model project all about?
+    - Can you share more information about the deep learning voice to transcript model project?
+    - I'm interested in learning more about the project that utilizes a voice to transcript model. Can you provide additional details?
+    - Can you give me an overview of the project that involves a deep learning voice to transcript model?
+    - Tell me about the deep learning voice to transcript model project.
+    - I'm curious about the project that uses a deep learning voice to transcript model. Can you provide more information?
+    - Can you provide more details about the project related to the deep learning voice to transcript model?
+    - Tell me more about the project that incorporates the use of a deep learning voice to transcript model.
+    
+ - intent: VoiceToTranscriptProjectMembers
+   examples: |
+    - Who are the team members involved in the deep learning voice to transcript model project?
+    - Can you provide information about the team members working on the project with the voice to transcript model?
+    - I'd like to know about the members of the project that involves a voice to transcript model. Can you provide details?
+    - Who is part of the team working on the deep learning voice to transcript model project?
+    - Can you share the names of the team members involved in the project related to the voice to transcript model?
+    - Tell me about the individuals who are part of the project with the deep learning voice to transcript model.
+    - I'm interested in knowing about the team members of the project that uses a voice to transcript model. Can you provide more information?
+    - Who are the team members working on the project that incorporates the use of a voice to transcript model?
+    - Can you provide details about the individuals involved in the project related to the deep learning voice to transcript model?
+    - Tell me about the team members of the deep learning voice to transcript model project.
+    - I'd like to know more about the individuals who are part of the project with the voice to transcript model. Can you provide additional information?
+    - Who is involved in the project that uses a deep learning voice to transcript model? Can you provide details?
+    - Can you share the names of the team members of the project that incorporates the use of a deep learning voice to transcript model?
+    
+ - intent: VoiceToTranscriptProjectLink
+   examples: |
+    - Can you provide me with the video link for the deep learning voice to transcript model project?
+    - I'm interested in watching a video about the project that involves a deep learning voice to transcript model. Can you share the link?
+    - Where can I find the video link for the project related to the deep learning voice to transcript model?
+    - Can you provide me with the link to the project that uses a voice to transcript model?
+    - I'd like to access the link for the deep learning voice to transcript model project. Can you provide it?
+    - Is there a link available for the project that incorporates the use of a voice to transcript model?
+    - Can you share the project link for the deep learning voice to transcript model?
+    - I'm looking for the link to the project that involves a deep learning voice to transcript model. Can you provide it?
+    - Where can I find more information about the project related to the voice to transcript model? Can you share the link?
+    - I'd like to access the project link for the deep learning voice to transcript model. Can you provide it?
+    - Can you provide me with the link to the project that utilizes a voice to transcript model?
+    - I'm interested in finding the project link for the deep learning voice to transcript model. Can you share it?
+    - Where can I find the link for the project that incorporates the use of a deep learning voice to transcript model?
+    - Can you share the project link for the voice to transcript model project?
+
+- intent: MusicGenreProjectTimeSchedule
+  examples: |
+    - What is the timeline or schedule for the music genre classification project?
+    - Can you provide me with the estimated time or schedule for the music genre classification project?
+    - When is the expected completion date or timeline for the music genre classification project?
+    - I'm curious about the anticipated timeline or schedule for the music genre classification project.
+    - Can you give me an update on the time or schedule for the music genre classification project?
+    - What is the projected timeline for the music genre classification project?
+    - Is there a timeline or schedule available for the music genre classification project?
+    - When are you planning to finish the music genre classification project?
+    - Do you have a timeline or schedule in place for the music genre classification project?
+    - What is the target timeline for completing the music genre classification project?
+    - Can you share any details about the schedule for the music genre classification project?
+    - How long is the expected timeline for the music genre classification project?
+    - When can we expect the music genre classification project to be completed?
+    - What is the planned timeline for the music genre classification project?
+
+- intent: TrafficAnalysisProjectTimeSchedule
+  examples: |
+    - What is the timeline or schedule for the autonomous traffic analysis system project?
+    - Can you provide me with the estimated time or schedule for the autonomous traffic analysis system project?
+    - When is the expected completion date or timeline for the autonomous traffic analysis system project?
+    - I'm curious about the anticipated timeline or schedule for the autonomous traffic analysis system project.
+    - Can you give me an update on the time or schedule for the autonomous traffic analysis system project?
+    - What is the projected timeline for the autonomous traffic analysis system project?
+    - Is there a timeline or schedule available for the autonomous traffic analysis system project?
+    - When are you planning to finish the autonomous traffic analysis system project?
+    - Do you have a timeline or schedule in place for the autonomous traffic analysis system project?
+    - What is the target timeline for completing the autonomous traffic analysis system project?
+    - Can you share any details about the schedule for the autonomous traffic analysis system project?
+    - How long is the expected timeline for the autonomous traffic analysis system project?
+    - When can we expect the autonomous traffic analysis system project to be completed?
+    - What is the planned timeline for the autonomous traffic analysis system project?
+
+- intent: RubiksCubeProjectTimeSchedule
+  examples: |
+    - What is the timeline or schedule for the Rubiks cube solver project?
+    - Can you provide me with the estimated time or schedule for the Rubiks cube solver project?
+    - When is the expected completion date or timeline for the Rubiks cube solver project?
+    - I'm curious about the anticipated timeline or schedule for the Rubiks cube solver project.
+    - Can you give me an update on the time or schedule for the Rubiks cube solver project?
+    - What is the projected timeline for the Rubiks cube solver project?
+    - Is there a timeline or schedule available for the Rubiks cube solver project?
+    - When are you planning to finish the Rubiks cube solver project?
+    - Do you have a timeline or schedule in place for the Rubiks cube solver project?
+    - What is the target timeline for completing the Rubiks cube solver project?
+    - Can you share any details about the schedule for the Rubiks cube solver project?
+    - How long is the expected timeline for the Rubiks cube solver project?
+    - When can we expect the Rubiks cube solver project to be completed?
+    - What is the planned timeline for the Rubiks cube solver project?
+
+- intent: SelfBalancingBotProjectTimeSchedule
+  examples: |
+    - What is the timeline or schedule for the self-balancing bot project?
+    - Can you provide me with the estimated time or schedule for the self-balancing bot project?
+    - When is the expected completion date or timeline for the self-balancing bot project?
+    - I'm curious about the anticipated timeline or schedule for the self-balancing bot project.
+    - Can you give me an update on the time or schedule for the self-balancing bot project?
+    - What is the projected timeline for the self-balancing bot project?
+    - Is there a timeline or schedule available for the self-balancing bot project?
+    - When are you planning to finish the self-balancing bot project?
+    - Do you have a timeline or schedule in place for the self-balancing bot project?
+    - What is the target timeline for completing the self-balancing bot project?
+    - Can you share any details about the schedule for the self-balancing bot project?
+    - How long is the expected timeline for the self-balancing bot project?
+    - When can we expect the self-balancing bot project to be completed?
+    - What is the planned timeline for the self-balancing bot project?
+
+- intent: VoiceToTranscriptProjectTimeSchedule
+  examples: |
+    - What is the timeline or schedule for the deep learning voice-to-transcript project?
+    - Can you provide me with the estimated time or schedule for the deep learning voice-to-transcript project?
+    - When is the expected completion date or timeline for the deep learning voice-to-transcript project?
+    - I'm curious about the anticipated timeline or schedule for the deep learning voice-to-transcript project.
+    - Can you give me an update on the time or schedule for the deep learning voice-to-transcript project?
+    - What is the projected timeline for the deep learning voice-to-transcript project?
+    - Is there a timeline or schedule available for the deep learning voice-to-transcript project?
+    - When are you planning to finish the deep learning voice-to-transcript project
+

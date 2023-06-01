@@ -1,0 +1,3702 @@
+version: "2.0"
+
+nlu:
+- intent: startc
+  examples: |
+    - /start
+    - start
+    - /Start
+    - /START
+    - How may I help you?
+    - how can I help you?
+    - how can i help you?
+    
+- intent: get_schedule
+  examples: |
+    - when does [Pirates]{"entity":"team"} play next?
+    - what's the schedule for [Team Name]{"entity":"team"}?
+    - tell me the next game for [Hustlers]{"entity":"team"}
+    - what time is the match for [Yatra Dev]]{"entity":"team"}?
+    - show me the schedule for [Skull Axis]{"entity":"team"}
+    - when is the next event for[Sgowbotics]{"entity":"team"}?
+    - [Bot Hive]{"entity":"team"}
+    - When is the next event for [AVTAR]{"entity":"team"}?
+    - Can you tell me the schedule for [RoboMax]{"entity":"team"}'s mid-term evaluation?
+    - What time is the mid-term evaluation for [META workforce]{"entity":"team"}?
+    - I would like to know when [Infinitron]{"entity":"team"}'s mid-term evaluation is scheduled.
+    - When does [Rio Drivers]{"entity":"team"} have their mid-term evaluation?
+    - What's the schedule for [TECHNOTRONS]{"entity":"team"}'s mid-term evaluation?
+    - Tell me the time for [TECHNOTRONS]{"entity":"team"}'s mid-term evaluation.
+    - What's the mid-term evaluation time for [TECHNOTRONS]{"entity":"team"} team?
+    - Can you give me the mid-term evaluation schedule for [TECHNOTRONS]{"entity":"team"} team?
+    - What's the timing for [TECHNOTRONS]{"entity":"team"}'s mid-term evaluation?
+    - When is [TECHNOTRONS]{"entity":"team"}'s mid-term evaluation happening team?
+    - I need to know the time for [TECHNOTRONS]{"entity":"team"}'s mid-term evaluation.
+    - What's the mid-term evaluation schedule for [TECHNOTRONS]{"entity":"team"}?
+    - Can you provide me with the mid-term evaluation time for [TECHNOTRONS]{"entity":"team"}?
+    - When is the next event for [Delivery_Droids]{"entity":"team"}?
+    - Can you tell me the schedule for [Bot Squad]{"entity":"team"}?
+    - What time is the event for [iTm^2]{"entity":"team"}?
+    - I would like to know when [Nerdobots]{"entity":"team"}'s event is scheduled.
+    - When does [The Warriors]{"entity":"team"} have their event?
+    - What's the schedule for team [WizDroid]{"entity":"team"}'s event?
+    - Tell me the time for team [Ace]{"entity":"team"}'s event.
+    - What's the event time for team [AUTOEVOLUTION]{"entity":"team"}?
+    - Can you give me the event schedule for team [Robo Knights]{"entity":"team"}?
+    - What's the timing for team [RoboGeniuses]{"entity":"team"}'s event?
+    - When is team [Bot_Militia]{"entity":"team"}'s event happening?
+    - what is the schedule for [Robo Bobo]{"entity":"team"}
+    - the schedule for [The_MERNingfuls]{"entity":"team"}
+    - what is the schedule for [robodev]{"entity":"team"}
+    - What is the schedule for [Robo_Mavericks]{"entity":"team"}
+    - Is the schedule for [Code_Till_Death]{"entity":"team"}
+    - what is the time for [Optimus_prime]{"entity":"team"}
+    - the time for [ROBODUINO 4]{"entity":"team"}
+
+- lookup: team
+  examples: |
+    - Bot Squad
+    - Team Name
+    - Hustlers
+    - Yatra Dev
+    - Skull axis 
+    - Showbotics
+    - Bot Hive 
+    - AVTAR
+    - RoboMax
+    - Meta workforce
+    - Infinitron
+    - Rio Drivers
+    - 4MULATORS
+    - Quanta Bots 
+    - GigaBot
+    - Pirates
+    - Tech Buds 
+    - RoboDroid
+    - Team Rocket 
+    - The Bomb Squad
+    - Ã‰merveiller
+    - Robocore 
+    - Bot Brigade
+    - Bot Architects
+    - RoboQueens
+    - SABY
+    - T.I.N.B.O.T
+    - Soul omega
+    - Four - Tech 
+    - Spilt Robotic team 
+    - Wingardium Leviosa
+    - SMASH CLAN
+    - CarBot
+    - OH-Bot
+    - bob the builder 
+    - Alpinoids
+    - Slayers
+    - Team Phoenix
+    - The Creaters
+    - Eagle Gang
+    - Robusta
+    - RoboBuild
+    - 4 BOTs
+    - Mechabotz
+    - Cyber_Bots
+    - Delivery_Droids
+    - iTm^2
+    - Nerdobots
+    - Pirates 
+    - TECHNOTRONS
+    - The Warriors 
+    - WizDroid
+    - Ace
+    - AUTOEVOLUTION
+    - Robo Knights
+    - RoboGeniuses
+    - Bot_Militia
+    - Robo Bobo
+    - The_MERNingfuls
+    - robodev
+    - Robo_Mavericks 
+    - Code_Till_Death
+    - T.I.N.B.O.T
+    - Optimus_prime
+    - ROBODUINO 4
+
+    
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: common_question
+  examples: |
+    - Where is MNNIT college present?
+    - Tell me something about MNNIT
+    - What is MNNIT?
+    - Name a college present in Allahabad
+    - What is full form of MNNIT?
+
+- intent: moreaboutcollege
+  examples: |
+    - MNNIT 
+    - mnnit college
+    - Inform about MNNIT college
+    - inform about mnnit college
+    - tell me something more about MNNIT Allahabad
+    - Is MNNIT Allahabad a good college?
+    - Is MNNIT a good college for engineering?
+    - When MNNIT college is established?
+    - How old is the MNNIT Allahabad?
+    - Is MNNIT a Regional Engineering Colleges of India?
+    - Is MNNIT a Government or Private college?
+
+- intent: club_club
+  examples: |
+    - What are clubs present in MNNIT?
+    - Which type of clubs are present in college?
+    - What are different activities happen in MNNIT?
+    - Mention the name of clubs of MNNIT.
+    - clubs of mnnit college
+    - Which type of clubs are present in MNNIT college?
+
+- intent: search_provider
+  examples: |
+    - I need a [hospital] (facility_type)
+    - I need a [clinic] (facility_type)
+    - find me a nearby [hospital] (facility_type)
+    - show me home health agencies (facility_type)
+    - [hospital] (facility_type)
+    - find me a nearby [hospitals] (facility_type) in [San Francisco] (locations)
+    - [hospitals] (facility_type) in [Delhi] (locations)
+    - I need a [home health agency](facility_type)
+    - there is any hospitals 
+    - clinics
+    - medical shop
+
+- intent: benfit_club
+  examples: |
+    - What are the facility of exploring different fields in MNNIT?
+    - What are the benefits of joining club ?
+    - What are advantages of joining different club?
+    - Is there any benefit of joining different club?
+    - Is there any advantage of participating different club?
+    - Is it worth to work in different clubs of MNNIT? 
+    - What are the reasons for joining a club?
+    - Why is it important to join clubs in college?
+    - Should you join clubs in college?
+
+- intent: explore_campus
+  examples: |
+    - Tell me someting about campus of MNNIT college
+    - How the campus of MNNIT looks like?
+    - Is campus life of mnnit college good?
+    - How was your life at MNNIT?
+    - Is campus of MNNIT colloge beautiful?
+    - What is the campus area of MNNIT college?
+
+- intent: lit_club
+  examples: |
+    - What is Literary Cub?
+    - Is there any literary club of MNNIT college ?
+    - Tell me something about literary club
+    - Is literary club of mnnit college good?
+    - What are the benefits of joining Literary club ?
+    - What does we do in Literary club ?
+
+- intent: cafetarea
+  examples: |
+    - Is there any good canteen present in campus area?
+    - Can you tell me about canteen and shops present in campus area?
+    - Which restaurants are present near MNNIT Allahabad?
+    - Is stationary shop are present in campus area?
+    - Can we order food from near by restaurants in mnnit college ?
+
+- intent: boyshostel
+  examples: |
+    - How many boys hostels are there in Mnnit Allahabad?
+    - What facilities are provide in boys hostel of mnnit allahabad?
+    - Tell me something about boys hostel
+    - How rooms are alloted in mnnit college?
+    - What are the condition of boys hostel in mnnit college?
+    - Is the condition of boys hostel good?
+
+- intent: girlshostel
+  examples: |
+    - How many girls hostels are there in Mnnit Allahabad?
+    - What facilities are provide in girls hostel of mnnit allahabad?
+    - Tell me something about girls hostel
+    - How rooms are alloted for girls in mnnit college?
+    - What are the condition of girls hostel in mnnit college?
+    - Is the condition of girls hostel good?
+
+- intent: library
+  examples: |
+    - Is there any library present in MNNIT college?
+    - How many books are present in library of MNNIT college?
+    - How many e-journals and conference papers  are present in library of MNNIT college?
+
+- intent: type_intro
+  examples: |
+    - Want to register
+    - want to tell about myself
+    - intro
+    - give intro
+    - submit my name
+
+- intent: tell_name
+  examples: |
+    - What's your name?
+    - Could you tell me your name?
+    - What should I call you?
+    - What is the name of this chatbot?
+    - Do you have a name?
+    - Who are you?
+    - How should I address you?
+    - What do you call yourself?
+    - What's the name of the AI assistant?
+    - Can you introduce yourself?
+    - Please tell me your name.
+    - What are you called?
+    - What name do you go by?
+    - Could you give me your name?
+
+- intent: my_name
+  examples: |
+    - myself [anurag]{"entity":"name"}
+    - my name is [shashank]{"entity":"name"}
+    - my name is [sneha]{"entity":"name"}
+    - my name is [sarthak]{"entity":"name"}
+    - [purushottam]{"entity":"name"} is my name
+    - [kirtiman]{"entity":"name"} this side
+    - people call me [bhanu]{"entity":"name"}
+
+- intent: mobile_number
+  examples: |
+    - my number is [9848756789]{"entity":"number"}
+    -  [9848756789]{"entity":"number"}
+    -  [9848756789]{"entity":"number"} is my number
+    - my mobile number is  [9848756789]{"entity":"number"}
+
+- intent: MNNIT_Robotics
+  examples: |
+    - Robotics club
+    - robotics club
+    - roboticsclub
+    - robot club
+    - aro club
+    - Aeronautical club
+    - Aero club
+    - tell me something about robotics club
+    - Ml/A 
+    - ml
+    - ai
+    - machine learning
+    - artificial intelligence
+    - robot
+    - bots
+    - machines
+    - best club
+    - tech club
+    - hardware club
+    - Data Science club
+    - Artificial Intelligence club 
+    - machine learning club
+    - there is any club inside the sac building
+    - sac building club
+
+- intent: Department
+  examples: |
+    - department name
+    - how many Deaprtment in the college
+    - How many Accademic department is present in the college
+    - How many Degree courses are available in the mnnit
+    - How many Degree courses are available in the college
+    - How many Degree courses are available in the campus
+    - Degree courses
+    - how many branches are present
+    - What are the branches present ?
+
+- intent: Canteen
+  examples: |
+    - how many canteen in the campus
+    - canteen 
+    - cafe
+    - food shop
+    - there is any place in the campus where you can buy delicious food
+    - Delicious food center
+    - how many canteen is available in the campus
+
+  # Sport Areas
+- intent: Play_Grounds
+  examples: |
+    - Athelete Ground
+    - Ground
+    - cricket ground
+    - tennis ground
+
+- intent: play_video
+  examples: |
+    - play the mentioned video
+    - open the url
+    - open the link in browser
+    - show me the video that i asked for
+    - play the video
+
+- intent: basketball
+  examples: |
+    - there is any basket ball court in the campus
+    - basket ball court
+    - court
+    - new basketball court
+    - old basketball court
+
+- intent: Gym
+  examples: |
+    - there is any gym 
+    - gym for boys 
+    - gym for girls
+    - exercise room 
+    - gym
+    - there is any place in the campus where you can do body building exercise
+
+- intent: Cordinators_Robotics
+  examples: |
+    - head of robotics club
+    - mentors of robotics club
+    - mentors of Robtoics club
+    - who is anurag gupta
+    - Anurag Gupta
+    - Purushottam Kumar Singh
+    - who is the head of roboticsclub
+    - who is the head of Robotics Club
+    - Who is the head of robotics club
+    - who is the head of robotics club?
+    - Mehul Singhal
+    - coordinators of robotics club
+    - coordinator of hardware club
+    - Coordinators of Robotics Club
+    - coordinator Name of robotics club
+    - cordinator Name of hardware club
+    - Final Year cordinator Name
+    - Who is the final year cordinator of hardware club
+    - Who is the final year cordinator of robotics club
+    - Who is the coordinator of robotics club?
+    - Can you tell me the name of the robotics club coordinator?
+    - How can I contact the robotics club coordinator
+    - What are the responsibilities of the robotics club coordinator?
+    - Who is in charge of the robotics club
+    - Can you tell me the name of the robotics club coordinator
+    - What is the email address of the robotics club coordinator
+    - How can I get in touch with the robotics club coordinator?
+    - What are the responsibilities of the robotics club coordinator?
+    - Who is leading the robotics club this year?
+    - What is the name of the person in charge of the robotics club?
+    - Who is responsible for organizing the robotics club events?
+    - Who can I contact for more information about the robotics club?
+    - Is there a faculty advisor for the robotics club?
+    - What is the role of the robotics club coordinator?
+    - Who is managing the robotics club budget?
+    - How long has the current robotics club coordinator been in charge?
+    - Who is the point of contact for the robotics club?
+    - Who is the robotics club president?
+    - Who are the other members of the robotics club leadership team?
+    - What is the background of the robotics club coordinator?
+    - Who is the coordinator of the Robotics Club?
+    - Can you tell me the name of the Robotics Club coordinator?
+    - What is the email address of the Robotics Club coordinator?
+    - How can I get in touch with the Robotics Club coordinator?
+    - What are the responsibilities of the Robotics Club coordinator?
+    - Who is leading the Robotics Club this year?
+    - What is the name of the person in charge of the Robotics Club?
+    - Who is responsible for organizing the Robotics Club events?
+    - Who can I contact for more information about the Robotics Club?
+    - Is there a faculty advisor for the Robotics Club?
+    - What is the role of the Robotics Club coordinator?
+
+- intent: Director
+  examples: |
+    - Director of MNNIT
+    - Director
+    - person name who is govern rule in the campus
+    - Director Names
+    - Whos is the Director of MNNIT
+    - Who is the Director of college
+    - Who is the Director of MNNIT Campus
+
+- intent: MNNIT_Game
+  examples: |
+    - which games are played under the campus
+    - games
+    - how many games are played
+    - Games Name
+
+- intent: Biotechnology_Department
+  examples: |
+    - Biotechnology Department
+    - Biotech Department
+    - HOD of Biotech Department
+    - HOD of Biotechnology Department
+    - Name the HOD of Biotech Department
+    - Name the HOD of Biotech branch
+
+- intent: placement
+  examples: |
+    - What is the salary trend of MNNIT Allahabad Placements?
+    - How many students got placed in MNNIT Allahabad Placements 2021?
+    - What was the highest CTC offered during MNNIT Allahabad Placements 2021? 
+    - What are placement statistics of MNNIT Allahabad? 
+    - How is placement in MNNIT?
+    - How is placement?
+    - What is highest package? 
+    - placement
+
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: healthquery
+  examples: |
+    - healthquery
+    - healthupdate
+    - healthissue
+    - I want to give feedback of my health
+    - health form
+    - i am sick
+    - i am ill
+    - i am bleeding
+    - i am nauseaus
+    - i am dying
+    - i need medical assistance
+    - help me
+    - create a health form
+
+# - intent: inform
+#   examples: |
+#     - a full [8 hours](sleep)
+#     - only [four hours](sleep)
+#     - about [six hours](sleep)
+#     - [5 hours](sleep)
+#     - [low](stress)
+#     - [medium](stress)
+#     - [high](stress) stress right now
+#     - Yes, I went for a [run](exercise)
+#     - uh huh an hour of [yoga](exercise)
+#     - yep, I went for a [hike](exercise)
+#     - Yes I took the dog for a [walk](exercise)
+#     - Yeah, I played [tennis](exercise)
+#     - I went [swimming](exercise)
+#     - I went for [walk](exercise)
+#     - I did [swimming](exercise)
+#     - I went for [cycling](exercise)
+#     - Took a [spin class](exercise)
+#     - Did some [boxing](exercise)
+#     - [rock climbing](exercise)
+#     - played some [basketball](exercise)
+#     - played [football](exercise)
+#     - I did a [workout](exercise) video
+#     - I want to get up early and go for a run
+#     - Be more patient with my family
+#     - do exercise 
+#     - Try to be a better friend
+#     - Make sure to eat better tomorrow
+#     - eat less junk food
+#     - eat better
+#     - spend less time on my phone
+#     - don't procrastinate
+#     - Go to bed earlier
+#     - Don't stay up so late
+#     - try to make some time to meditate
+#     - i ate pretty healthy overall
+#     - lots of fruits and vegetables
+#     - I ate a salad
+#     - too many snacks
+#     - too many sweets
+#     - too much junk food
+#     - a lot of carbs
+#     - too much fatty food
+#     - Get more exercise
+
+#this is a health related out of scope
+# - intent: outofscope
+#   examples: |
+#     - that's not what I want to do
+#     - wait stop
+#     - you're no help
+#     - this is no help at all
+#     - how old are you
+#     - I want to order a pizza
+#     - tell me the weather
+#     - this isn't working
+#     - I already told you that
+#     - don't like that
+#     - I don't want to tell you that
+#     - none of your business
+#     - that's not right
+#     - stop asking
+#     - nevermind
+#     - I want to do something else
+#     - I changed my mind
+
+- intent: Avishkar
+  examples: |
+    - What is Avishkar?
+    - Tell me somethong about Avishkar
+    - What is technical fest?
+    - Avishkar
+    - What is Avishkar event?
+    - Which is the famous fest ?
+
+- intent: eventcc
+  examples: |
+    - What are the event present in avishkar?
+    - Events of cc club in which we can participate
+    - Name the events of avishkar
+    - What are various events present in Avishkar?
+    - What are the function in Avishkar?
+    - What are the occasion organized in Avishkar?
+    - events of Avishkar
+    - Tell me some events name of avishkar
+
+# - intent: chitchat/ask_name
+#   examples: |
+#     - what is your name?
+#     - May I know your name?
+#     - what do people call you ?
+#     - Do you have a name for yourself?
+
+- intent: eventrobomania
+  examples: |
+    - What is Robomonia?
+    - What are events in robotics club during Avishkar
+    - events of Robomania
+    - What are events organised by Robotics Club MNNIT?
+    - Robitics event in Avishkar
+    - Tell me something about Robomonia 
+    - Name the events of Robomonia
+    - Tell me about events of Robomania
+    - Name the events of Avishkar of Robotics club
+    - Robitics event in Avishkar MNNIT
+
+- intent: achievR
+  examples: |
+    - What are the achievement of Robotics club
+    - achievement of robotics club MNNIT
+    - Tell me something about achievement of robotics club
+    - Name the achievement of robotics
+    - achievement of robotics
+    - winning of robotics club 
+    - What are the winning of robotics club MNNIT
+
+- intent: prasang
+  examples: |
+    - What is Prasang?
+    - Tell me something about Prasang.
+    - What is Prasang event?
+    - Where is Prasang organized?
+    - from which club Prasang is organized?
+    - What type of competition is Prasang?
+    - Prasang
+    - Robotics Club event Prasang MNNIT
+    - Prasang is releted to which club?
+
+- intent: projects
+  examples: |
+    - What are the current projects of Robotics Club?
+    - What are some featured project of Robotics Club?
+    - Projects of Robotics Club
+    - outstanding projects of Robotics Club
+    - best project of Robotics Club
+    - excellent project of Robotics Club MNNIT
+    - Robotics Club Project MNNIT
+    - Name some projects of Robotics Club 
+    - Tell me something about projects of Robotics Club
+
+- intent: athhead
+  examples: |
+    - Who is head of athletics club
+    - Who is the coordinator of athletics club
+    - head of athletics club
+    - Coordinator of athletics club
+    - Under which professor , athletics club events are organised?
+    - head of athletics sports
+    - managing head of athletics club
+
+# - intent: chitchat/ask_weather
+#   examples: |
+#     - What's the weather like today?
+#     - Does it look sunny outside today ?
+#     - oh, do you mind checking the weather for me please?
+#     - I like sunny days in MNNIT.
+#     - I like sunny days in Motilal Nehru National Institute of Technology.
+#     - Can we expect any thunderstorms?
+#     - Do you have good weather?
+#     - How is the weather today?
+#     - How is the weather?
+#     - How is weather today
+#     - Is it hot or cold?
+#     - Is it humid out there today?
+#     - Is it quite breezy outside?
+#     - Is it raining
+#     - Is it raining?
+#     - Looks like a beautiful day hey?
+#     - Nice day out today?
+#     - Weather?
+#     - What is the temperature today?
+#     - What is the weather at your place?
+#     - What is the weather for tomorrow?
+#     - What is the weather in newyork?
+#     - What's it like out there?
+#     - What's the weather forecast?
+#     - What's the weather like over there?
+#     - What's the weather like where I am right now?
+#     - What's the weather like?
+#     - Will I require my raincoat today?
+#     - Will the skies be clear today?
+#     - Will we build a snowman today?
+#     - how is the weather
+#     - how is the weather ?
+#     - how is the weather?
+#     - how's the weather ?
+#     - how's the weather?
+#     - how's weather
+#     - hows the waether
+#     - is it hot ?
+#     - is it hot outside ?
+#     - is it sunny
+#     - is the sun out where you are?
+#     - is the sun out where zou are?
+#     - it is cold
+#     - temperature?
+#     - the weather today
+#     - weatger
+#     - weather
+#     - weather?
+#     - what is the whether today
+#     - what the wheather like?
+#     - what"s the weather
+#     - what's the weather like where you are?
+#     - what's the weather like?
+#     - what's the weather today
+#     - what's the weather today?
+
+
+- intent: Event
+  examples: |
+    - How many Event is organise in the MNNIT Campus.
+    - Event
+    - which Fest is best of MNNIT.
+    - There is any tech fest 
+    - There is any cultural fest.
+    - Give the name of Popular fest of MNNIT.
+    - Popular Fest
+
+- intent: committee
+  examples: |
+    - How many committes are present in the mnnit.
+    - cultural club 
+    - cultural committee
+    - Dance Committee
+    - Drama Committee
+   
+- intent: Image of MNNIT
+  examples: |
+    - Image of MNNIT
+    - Academic Building of MNNIT Campus
+    - Position
+    - academic building
+    - administration building
+    - NIRF ranking 
+    - Organization
+
+- intent: register
+  examples: |
+    - I want to get register
+    - what is the registeration process
+    - Guide me with the registeration process
+    - How to get register for this ML course
+    - Register me
+    - Registeration process
+    - Please register me for AI program
+    
+- intent: thanks
+  examples: |
+    - thankyou
+    - thanks
+    - thank you
+    - Thanks
+    - Thank You
+    - that's it
+    - no thanks
+    - i am good with it
+    - thanks for your help
+
+- intent: achievAth
+  examples: |
+    - What are the achievement of athletics club
+    - achievement of athletics club MNNIT
+    - Tell me something about achievement of athletics club
+    - Name the achievement of athletics
+    - achievement of athletics
+    - winning of athletics club 
+    - What are the winning of athletics club MNNIT
+
+- intent: out_of_scope
+  examples: |
+    - hbzxbiugbixzbcIBSACIXBC
+    - order me food
+    - i don't know
+
+- intent: ask_project_link_ingeneral
+  examples: |
+    - can you give me a link for it
+    - Can you provide me with the link to the project?
+    - Where can I find the project link?
+    - I need the project link, please
+    - Could you share the URL for the project?
+    - What's the URL for the project?
+    - How can I access the project?
+    - What is the link to the project?
+    - Can you give me the link to the project?
+    - I'm looking for the project URL, can you help?
+    - Do you have the project URL?
+    - I need the URL for the project, please
+    - Please provide me with the project link
+    - Where is the project link?
+    - What's the project URL?"
+    - Can you provide me with the link to the project?
+    - What is the link to the project?
+    - Where can I find the project link?
+    - Please share the project link.
+    - I need the link to the project.
+    - Can you give me the project link?
+    - What's the URL for the project?
+    - Where is the project located online?
+
+- intent: ballfollowingbot
+  examples: |
+    - ball following bot
+    - ballfollowingbot
+    - Tell me something about ballfollowingbot 
+    - What is ballfollowing bot?
+    - Tell me something about ball following project
+    - Ball Following Bot
+    - ball following bot project
+    - project of ball following bot
+
+- intent: ask_self_balancing_bot
+  examples: |
+    - Self Balancing Bot
+    - selfbalancingbot
+    - tell me about self balancing bot
+    - Tell me about Self Balancing Bot
+    - Brief introduction about self balancing bot
+    - Can you give me a brief overview of  the self balancing bot project?
+    - I'm new to self balancing bot. Can you explain what they are?
+    - Tell me the basics of self balancing bot
+    - tell me something about self balancing bot
+    - self balancing bot project
+    - I'm interested in learning about the fundamentals of self balancing bot.
+    - tell me something about self balancing bot project
+    - What do I need to know about self-balancing bots as a beginner?
+    - an introduction to self-balancing robot
+    - Explain the concept of self-balancing bots in simple terms
+    - I want to understand the fundamental principles of self-balancing bots.
+    - What are the key concepts behind self-balancing bots?
+    - Tell me the basics of how self-balancing bots work
+    - foundational aspects of self-balancing bots.
+    - give me an overview of self-balancing bot technology?
+    - What are the fundamental principles of balance in self-balancing bots?
+    - How do self-balancing bots maintain stability while moving?
+    - Can you explain the basic mechanics of self-balancing robots?
+    - I'm looking for a beginner-friendly introduction to self-balancing bots.
+
+- intent: compballfollow
+  examples: |
+    - What type of techstack and hardware component are used in ball following bot ?
+    - Tell me something about type of techstack and hardware component are used in ball following bot
+    - Type of techstack and hardware component are used in ball following bot
+    - type of techstack and hardware component are used in ball following bot
+    - Which components are used in ball following bot?
+    - components of ball following bot
+    - component of ball following bot
+    - Name the component of ball following bot
+    - Name the type of techstack and hardware component are used in ball following bot
+
+- intent: ask_self_balancing_bot_components
+  examples: |
+    - What are the main components of a self balancing bot?
+    - Can you list the key parts of a self balancing bot project?
+    - Tell me about the main elements that make up a self balancing bot.
+    - I'm curious about the hardware components used in a self balancing bot.
+    - What are the essential parts of a self balancing robot?
+    - what are the components used in self balancing bot project
+    - Can you explain the different components of a typical self-balancing bot?
+    - I want to know about the major building blocks of a self balancing bot projetc.
+    - Explain the key components of a self-balancing robot in detail.
+    - What are the essential modules or parts of a self-balancing bot?
+    - Tell me about the hardware requirements for building a self balancing robot.
+    - I'm interested in learning about the electronic components used in self-balancing bots.
+    - Can you provide an overview of the sensors and actuators used in self-balancing robots?
+    - Explain the different types of motors and sensors typically used in self-balancing bots.
+    - What are the main control units or boards used in self-balancing robots?
+    - Tell me about the structural components and chassis used in self-balancing bots.
+
+- intent: implementballfollow
+  examples: |
+    - What are the steps taken for making this project?
+    - What are the implementation of this project?
+    - Implementation of the ball following bot
+    - What are the functions of ball following bot?
+    - functions of ball following bot 
+    - Steps of ball following bot
+
+- intent: gesturecontrol
+  examples: |
+    - Can you tell me about the project Gesture controlled car ?
+    - What is the Gesture controlled car project's purpose?
+    - What is the objective of the Gesture controlled car project?
+    - What is the gesture controlled car project about?
+    - What are the features of the gesture controlled car?
+    - Can you tell me about the components of the gesture-controlled car?
+    - How does the gesture-controlled project work?
+    - What kinds of gestures can be used to control the project?
+    - What kind of sensors are involved in controlling the project?
+    - What are the hardware components used in the gesture-controlled project?
+    - What is the software used in the gesture-controlled project?
+    - Can you tell me about the components of the gesture-controlled project?
+    - What does the gesture-controlled car look like?
+    - What is the size of the gesture-controlled car?
+
+- intent: let_check
+  examples: |
+    - kam nahi kr rha hai 
+    - its okay
+    - lets check
+ 
+ # clubs
+- intent: Yoga_Club
+  examples: |
+    - yoga
+    - mental exercise
+    - yoga club
+    - where yoga club present
+    - benefits of yoga
+    - coordinators of yoga
+
+- intent: Chess_club
+  examples: |
+    - there is any chess club
+    - chess club
+    - head of chess club
+    - coordinators of chess club
+    - chess tournament are offline 
+    - chess tournament are online
+    - chess tournament
+
+- intent: Cricket_Club
+  examples: |
+    - there is any cricket club
+    - cricket club
+    - most interesting game
+    - most interesting sports
+    - maximum students played game
+    - maximum students played sports
+    - 11 number of people 
+    - cricket
+    - Cricket
+
+- intent: E_cell
+  examples: |
+    - there is any entrepreneurship club
+    - E-Cell
+    - e-cell
+    - e_cell
+    - bussiness club
+    - entrepreneurship club
+   
+
+- intent: MHM
+  examples: |
+    - media house 
+    - Media house
+    - Videography club
+    - Photography club
+    - Graphic design club 
+    - photoes
+
+- intent: Anokhi_Pahel
+  examples: |
+    - Anokhi pahel
+    - social service
+    - poor child study
+    - anokhi pahel
+    - social club
+    - Social Service Club
+
+- intent: volleyball
+  examples: |
+    - volleyball
+    - Volleyball
+    - Volley ball
+    - volley ball
+    - How do you play volleyball
+    - what is the best place to play volley ball
+    - is beach volleyball better than indoor
+    - How to play volleyball for beginners?
+    - how to play volleyball for beginners?
+    - volleyball game
+    - volleyball sports
+    - cannon ball
+    - what is the volley ball club
+    - What is the volleyball club
+  
+- intent: Green_Club
+  examples: |
+    - Plantation
+    - clean the campus
+    - protect the bird 
+    - Protect the animals
+    - environment
+    - covering the tree
+    - what is the Green club
+    - what is green club
+    - What is the Green club
+    - what is the work of green club?
+    - what is the work of Green club?
+
+- intent: Rotaract_club
+  examples: |
+    - what is the rotaract club
+    - What is rotaract club
+    - what is the work of rotaract club
+    - rotaract club
+    - rotaract
+    - Rotaract
+    - Do social work 
+    - visiit the local area 
+    - go orphan
+    - spend the time with the people
+
+- intent: Football
+  examples: |
+    - Football
+    - football
+    - Foot ball
+    - Foot Ball
+
+- intent: Machanical_department
+  examples: |
+    - mechanical department
+    - Mechanical Department
+    - Mechanics department
+    - Hod of Mechanical Department
+    - Best Teachers in department
+  
+- intent: Multi_Purpose_hall
+  examples: |
+    - what is the multi-purpose hall
+    - what is the mp hall
+    - What is the MP hall
+    - What is the full form of MP hall
+    - What is the use of MP hall
+    - what is the use  of multi-purpose hall
+    - What is the use of Multi-purpose hall
+    - place where event organised
+    - event organised
+   
+
+- intent: askplaces
+  examples: |
+    - Can you tell me some hospitals nearby MNNIT Allahabad?
+    - Tell me some hospitals nearby MNNIT Allahabad.
+    - Tell me some medical store nearby MNNIT Allahabad .
+    - Is there any good hospitals nearby MNNIT Allahabad ?
+    - Which hospitals are present nearby MNNIT , Allahabad?
+
+- intent: ask_self_balancing_bot_project_video_link
+  examples: |
+    - Can you provide me with the link to the self balancing bot project?
+    - I'm interested in the project details of the self balancing bot. Where can I find the link?
+    - Could you share the project link for the self-balancing bot you mentioned earlier?
+    - I'd like to access the project page for the self balancing bot. What is the link?
+    - Can you direct me to the website or repository for the self-balancing bot project?
+    - I'm curious to learn more about the self balancing bot project. Can you give me the link?
+    - Where can I find more information about the self balancing bot project? Please share the link.
+    - I want to explore the details of the self-balancing bot project. What is the project link?
+    - Can you provide me with the URL for the self balancing bot project?
+    - I'd like to access the project documentation or source code for the self-balancing bot. What is the link?
+    - What is the website or GitHub repository for the self-balancing bot project?
+    - Can you direct me to the online resource where I can find the self-balancing bot project details?
+    - I'm interested in checking out the project page for the self-balancing bot. Where can I find the link?
+    - Please share the link to the project documentation or repository for the self-balancing bot.
+    - I want to visit the project website or GitHub page for the self-balancing bot. What is the link?
+    - Can you provide me with the video link of the self balancing bot project?
+    - I'm interested in watching the video of the self balancing bot project. Can you share the link?
+    - Where can I find the video of the self-balancing bot project?
+    - Do you have a video link for the self-balancing bot project?
+    - I want to watch the video of the self-balancing bot project. Please share the link.
+    - Could you share the video link for the self-balancing bot project?
+    - Can you provide me with the link to the video of the self-balancing bot project?
+    - I'm curious to watch the video of the self balancing bot project. Where can I find it?
+    - Please share the video link of the self balancing bot project.
+    - I would like to watch the video of the self balancing bot project. What's the link?
+    - Could you share the video link of the self balancing bot project with me?
+    - Can you provide me with the video link for the self-balancing bot project?
+    - I'm looking for the video link of the self balancing bot project. Can you help?
+    - Where can I watch the video of the self-balancing bot project?
+
+- intent: membergesture
+  examples: |
+    - Who is on the team for this gesture-controlled project?
+    - Can you tell me who is working on gesture-controlled project?
+    - Who are the team members of gesture-controlled project?
+    - Who are the members of gesture-controlled project?
+    - Could you give me a list of team members on gesture-controlled project?
+    - Who's working on gesture-controlled project?
+    - Team member's name for gesture controlled project
+    - Member's name for gesture controlled project
+
+- intent: ask_self_balancing_bot_applications
+  examples: |
+    - What are the applications of a self balancing bot project?
+    - Can you tell me the potential uses of a self balancing bot project?
+    - Where can self-balancing bots be applied?
+    - What are the practical applications of a self balancing bot project?
+    - How can self-balancing bots be utilized in real-world scenarios?
+    - List some possible applications of a self-balancing bot project.
+    - What are the practical uses of a self-balancing bot project?
+    - Can you give me some examples of where self balancing bots can be used?
+    - Tell me about the potential applications of a self-balancing bot project.
+    - Describe the practical uses of a self balancing bot project
+    - What are some real-world scenarios where self-balancing bots can be applied?
+    - List the potential applications of a self-balancing bot project
+    - What are some use cases for a self-balancing bot project?
+    - Can you provide me with examples of how self-balancing bots can be utilized?
+    - Tell me about the applications of self-balancing bots.
+
+# - intent: linkgesture
+#   examples: |
+#     - Can you share the link to the project?
+#     - What is the URL of the project?
+#     - Could you send me the link to the project?
+#     - Where can I find the project link?
+
+- intent: smartsolarcell
+  examples: |
+    - Can you tell me about the smart solar cell project?
+    - What is the purpose of the smart solar cell project?
+    - What are the features of the smart solar cell project? 
+    - Tell me something about smart solar cell project.
+    - Smart Solar Cell Project
+    - What type of solar cells are used in the smart solar cell?
+    - What electronics are used in the smart solar cell?
+    - Can you tell me about the components of the smart solar cell?
+    - Who is working on the smart solar cell project?
+    - What does the smart solar cell look like?
+    - What is the size of the smart solar cell?
+
+- intent: ask_self_balancing_bot_team
+  examples: |
+    - Who were the team members of the self balancing bot project?
+    - Can you tell me about the people who worked on the self balancing bot project?
+    - Who were involved in developing the self balancing bot project?
+    - List the team members of the self balancing bot project.
+    - Who were the individuals that worked on the self balancing bot project?
+    - Tell me about the team that developed the self-balancing bot project.
+    - Who were part of the team that worked on the self-balancing bot project?
+    - Can you provide me with the names of the people who contributed to the self-balancing bot project?
+    - Describe the team members of the self-balancing bot project.
+    - Who were the key individuals involved in the self-balancing bot project?
+    - List the team members or contributors of the self-balancing bot project.
+    - Who were the developers or team members of the self-balancing bot project?
+    - Can you tell me about the people who collaborated on the self-balancing bot project?
+    - Describe the individuals who worked on the self-balancing bot project.
+    - Who were the key contributors to the self-balancing bot project?
+
+- intent: membergesture
+  examples: |
+    - Who is on the team for this gesture-controlled project?
+    - Can you tell me who is working on gesture-controlled project?
+    - Who are the team members of gesture-controlled project?
+    - Who are the members of gesture-controlled project?
+    - Could you give me a list of team members on gesture-controlled project?
+    - Who's working on gesture-controlled project?
+    - Team member's name for gesture controlled project
+    - Member's name for gesture controlled project
+
+- intent: cellphonecontrolled
+  examples: |
+    - cellphonecontrolled
+    - What is CellPhoneControlled project?
+    - What is CellPhoneControlled project
+    - What is CellPhoneControlled event
+    - Can you tell me about the cell phone controlled bot project?
+    - What is the purpose of the cell phone controlled bot project?
+    - What are the features of the cell phone controlled bot project?|
+    - What kind of motors are used in the cell phone controlled bot?
+    - What sensors are used in the cell phone controlled bot?
+    - Can you tell me about the components of the cell phone controlled bot?
+    - Tell me something about cellphone controlled project
+    - Cell Phone Controlled Bot
+    - What does the cell phone controlled bot look like?
+    - What is the size of the cell phone controlled bot?
+    - What is the cellphone controlled bot project?
+    - Can you tell me more about the cellphone controlled bot?
+    - What are the features of the cellphone controlled bot?
+
+- intent: chatbotproj
+  examples: |
+    - chatbot project
+    - What is chatbot?
+    - Tell me something about chatbot project
+    - What is this chatbot for?
+    - What kind of features does this chatbot have?
+    - What technology is this chatbot built on?
+    - What programming languages were used to create this chatbot?
+    - Can you tell me about the tech stack for this chatbot?
+    - What framework is this chatbot built on?
+    - Did you use any specific framework to develop this chatbot?
+    - Which framework is used to develop this chatbot?
+    - What tools were used to develop this chatbot?
+    - Can you tell me about the development tools used for this chatbot?
+    - Which development tools were used in the creation of this chatbot?
+
+- intent: goingon
+  examples: |
+    - going on 
+    - what's going on 
+    - What's going on
+    - today schedule of event
+    - Can you tell me what's happening?
+    - I'm curious, what's going on?
+    - What's happening around here?
+    - What's the commotion about?
+    - What's the buzz?
+    - What's the scoop?
+    - What's the latest news?
+    - What's the update?
+    - What's new?
+
+- intent: ask_music_genre
+  examples: |
+    - Music Genre Classification
+    - musicgenreclassification
+    - music genre 
+    - music genre project
+    - Can you tell me more about the music genre classification project?
+    - What is the project all about in terms of music genre classification?
+    - I'd like to know more about the music genre classification project
+    - Tell me about the details of the project's music genre classification
+    - What can you tell me about the project's approach to music genre classification?
+    - Provide me with an overview of the music genre classification project
+    - Explain the purpose of the project in the context of genre classification
+    - What is the main objective of the music genre classification project?
+    - I'm interested in learning about the project's methodology for genre classification
+    - What dataset is used in the music genre classification project?
+    - Tell me about the algorithm or model used in the project for genre classification
+    - What are the key features considered in the music genre classification project?
+    - How accurate is the music genre classification in the project?
+    - Tell me about the results or findings of the music genre classification project
+
+- intent: ask_members_mcg
+  examples: |
+    - Who are the members of the music genre classification project?
+    - Tell me about the team working on the project
+    - Can you provide information about the people involved in the project?
+    - Tell me about the team behind the music genre classification project
+    - Who is responsible for the project?
+    - Who is working on the genre classification project?
+    - Give me details about the team members of the project
+    - I'd like to know more about the people working on the music genre classification project
+    - What can you tell me about the team involved in the project?
+    - What is the composition of the team working on the music genre classification project?
+    - Tell me about the members and their roles in the project
+    - Who makes up the team for the genre classification project?
+    - What roles do the team members play in the music genre classification project?
+    - Tell me about the responsibilities of the team members
+    - What are the roles and responsibilities of the team in the project?
+    - What are the backgrounds of the team members in the music genre classification project?
+    - Tell me about the expertise of the team members
+    - What qualifications do the team members have for the genre classification project?
+    - Are there any collaborators in the music genre classification project?
+    - Tell me about the partners or collaborators involved in the project
+    - Who is working with the team in the genre classification project?
+
+- intent: VideoLink_mcg
+  examples: |
+    - Can you provide me with the video link for the music genre classification project?
+    - Where can I find the video link for the genre classification project?
+    - What is the URL of the video for the music genre classification project?
+    - How can I access the video link for the genre classification project?
+    - Is there a video available for the music genre classification project?
+    - Can you share the video link for the genre classification project?
+    - Can you direct me to the video for the music genre classification project?
+    - I'm interested in watching the video for the genre classification project, what's the link?
+    - Where can I go to find the video link for the music genre classification project?
+    - How do I access the video for the genre classification project?
+    - Can you provide me with the link showcasing the music genre classification project?
+    - Tell me about the link associated with the music genre classification project
+    - What is the  link for the project that demonstrates music genre classification?
+    - Can you provide me with the  link for the music genre classification project?
+    - Where can I find the link for the genre classification project?
+    - What is the URL of the video for the music genre classification project?
+    - How can I access the  link for the genre classification project?
+    - Is there a link available for the music genre classification project?
+    - Can you share the link for the genre classification project?
+    - Can you direct me to the link for the music genre classification project?
+    - I'm interested in watching the video for the genre classification project, what's the link?
+    - Where can I go to find thelink for the music genre classification project?
+    - How do I access the link for the genre classification project?
+    - Can you provide me with the link  showcasing the music genre classification project?
+    - I'd like to watch the genre classification project, can you provide the link?
+    - Tell me about the link associated with the music genre classification project
+    - What is the  link for the project that demonstrates music genre classification?
+    - Can you provide me with the video link for the music genre classification project?
+    - Where can I find the video link for the genre classification project?
+    - Video Link of music genre
+    - Video Link of genre
+    - video link of genre
+    - video link of genre music classification
+    - music genre video link
+    - Music genre video link
+    - Music genre classification video link
+    - Music genre classification link
+    - Music genre link
+    - can you provide music genre video link
+    - Can you provide music genre video link
+    - can you provide genre video link
+    - can you provide Genre video link
+
+- intent: RubiksCubeSolverProject
+  examples: |
+    - Tell me more about the Rubik's Cube solver project.
+    - Can you provide information about the project that solves Rubik's Cube?
+    - Where can I find details about the Rubik's Cube solver project?
+    - What is the Rubik's Cube solver project about?
+    - Tell me about the project that solves Rubik's Cube.
+    - Can you share information about the Rubik's Cube solving project?
+    - I'm interested in learning more about the Rubik's Cube solver, can you provide details?
+    - How does the Rubik's Cube solver project work?
+    - Is there a webpage or website for the Rubik's Cube solver project?
+    - What is the purpose of the Rubik's Cube solver project?
+    - Can you direct me to the project page for the Rubik's Cube solver?
+    - How can I access more information about the Rubik's Cube solver project?
+    - I'd like to know more about the Rubik's Cube solver, can you provide details?
+    - Tell me about the Rubik's Cube solving project and how it works.
+    - Where can I find documentation or resources for the Rubik's Cube solver project?
+    - What is the progress on Rubiks Cube solving project?
+    - How far along is the Rubiks Cube solver project?
+    - Can you provide an update on the progress of the Rubiks Cube solver project?
+    - What is the latest status of the Rubiks Cube solving project?
+
+- intent: RubiksCubeSolverMembers
+  examples: |
+    - Who are the members of the Rubik's Cube solver project?
+    - Can you tell me about the team working on the Rubik's Cube solver project?
+    - Who is involved in the development of the Rubik's Cube solving project?
+    - Can you provide information about the people working on the Rubik's Cube solver project?
+    - Tell me more about the individuals or team behind the Rubik's Cube solving project.
+    - Who is responsible for the Rubik's Cube solver project?
+    - Can you share details about the team members involved in the Rubik's Cube solving project?
+    - I'm curious about the people behind the Rubik's Cube solver, can you provide information?
+    - Who is leading the Rubik's Cube solver project?
+    - Tell me about the contributors or team members of the Rubik's Cube solver project.
+    - Can you provide an overview of the team working on the Rubik's Cube solver project?
+    - Who is driving the development of the Rubik's Cube solver project?
+    - I'd like to know more about the individuals or team members involved in the Rubik's Cube solver project.
+    - Can you tell me about the people responsible for the Rubik's Cube solving project?
+    - Who are the key members of the Rubik's Cube solver project and what are their roles?
+    - Who are the members of the Rubiks Cube solver project?
+    - Can you tell me about the team working on the Rubiks Cube solver project?
+    - Who is involved in the development of the Rubiks Cube solving project?
+    - Can you provide information about the people working on the Rubiks Cube solver project?
+    - Tell me more about the individuals or team behind the Rubiks Cube solving project.
+    - Who is responsible for the Rubiks Cube solver project?
+    - Can you share details about the team members involved in the Rubiks Cube solving project?
+    - I'm curious about the people behind the Rubiks Cube solver, can you provide information?
+    - Who is leading the Rubiks Cube solver project?
+    - Tell me about the contributors or team members of the Rubiks Cube solver project.
+    - Can you provide an overview of the team working on the Rubiks Cube solver project?
+    - Who is driving the development of the Rubiks Cube solver project?
+    - I'd like to know more about the individuals or team members involved in the Rubiks Cube solver project.
+    - Can you tell me about the people responsible for the Rubiks Cube solving project?
+    - Who are the key members of the Rubiks Cube solver project and what are their roles?
+
+- intent: RubiksCubeSolverVideoLink
+  examples: |
+    - Can you provide the video link for the Rubik's Cube solver project?
+    - Where can I find the video showcasing the Rubik's Cube solver project?
+    - Is there a video demonstration of the Rubik's Cube solver project available?
+    - Can you share the link to the video showcasing the Rubik's Cube solver project?
+    - I'm interested in watching the video of the Rubik's Cube solver project, where can I find it?
+    - Could you please provide the video link for the Rubik's Cube solving project?
+    - Where can I watch the video demonstration of the Rubik's Cube solving project?
+    - Can you share the link to the video showcasing the Rubik's Cube solving project?
+    - I'd like to see the video of the Rubik's Cube solving project, where can I find it?
+    - Is there a video available that showcases the Rubik's Cube solver project? If yes, please provide the link.
+    - Can you tell me where I can watch the video of the Rubik's Cube solver project?
+    - Is there a video demonstration of the Rubik's Cube solver project that I can watch? If yes, please provide the link.
+    - Where can I find the video of the Rubik's Cube solving project? I'm interested in watching it.
+    - Can you provide the link to the video demonstrating the Rubik's Cube solving project?
+    - I'd like to watch the video demonstration of the Rubik's Cube solving project, can you share the link?
+    - Where can I find the video showcasing the Rubiks Cube solver project?
+    - Can you provide the video link for the Rubiks Cube solver project?
+    - Is there a video demonstration of the Rubiks Cube solver project available?
+    - Can you share the link to the video showcasing the Rubiks Cube solver project?
+
+- intent: TrafficAnalysisProjectInfo
+  examples: |
+    - What is the project about for the autonomous traffic analysis system?
+    - Can you provide information about the project related to the autonomous traffic analysis system?
+    - I'm interested in learning more about the project involving the autonomous traffic analysis system.
+    - Tell me about the project that focuses on the autonomous traffic analysis system.
+    - Can you give me details about the project related to the autonomous traffic analysis system?
+    - What are the details of the project involving the autonomous traffic analysis system?
+    - I'd like to know more about the project related to the autonomous traffic analysis system.
+    - Can you share information about the autonomous traffic analysis system project?
+    - Tell me more about the project that utilizes the autonomous traffic analysis system.
+    - Can you provide project details for the autonomous traffic analysis system?
+    - I'm curious about the project that involves the autonomous traffic analysis system, can you tell me more?
+    - What is the project all about that uses the autonomous traffic analysis system?
+    - Can you share project information for the autonomous traffic analysis system?
+    - I'd like to learn more about the project utilizing the autonomous traffic analysis system.
+    - Tell me about the project that incorporates the use of the autonomous traffic analysis system.
+    - What is traffic analysis ?
+    - what is traffic analysis 
+    - Traffic analysis Project
+    - traffic analysis project
+    - Analysis Project
+    - Tell me more details about traffic analysis project
+    - Traffic Analysis Project
+    - tell me more details about Traffic Analysis Project
+    - Tell me about traffic analysis
+    - Tell me more details about Traffic Analysis
+    - tell me more details about Traffic Analysis
+    - Tell me about traffic
+    - tell me about traffic
+    - Tell me about analysis
+    - tell me about analysis
+    - tell me more information traffic analysis
+    - Tell me informataion about analysis
+    - Tell me information about traffic analysis
+    - What is the definition of traffic analysis?
+    - Can you explain what traffic analysis is?
+    - May you explain what traffic analysis is?
+    - What does the Traffic Analysis Project involve?
+    - What is the purpose of the Traffic Analysis Project?
+    - What are the objectives of the Traffic Analysis Project?
+    - Can you provide more information about the Traffic Analysis Project?
+    - May you provide more information about the Traffic Analysis Project?
+    - What are the benefits of performing traffic analysis?
+    - What is the importance of traffic analysis?
+    - Can you give an overview of traffic analysis?
+    - May you give an overview of traffic analysis?
+    - What are some key aspects of traffic analysis?
+    - What is the scope of traffic analysis?
+    - How can traffic analysis be used in different fields?
+    - Can you provide more details about the technique and methods used in traffic analysis?
+    - May you provide more details about the technique and methods used in traffic analysis?
+
+
+- intent: TrafficAnalysisProjectMembers
+  examples: |
+    - Who are the members of the autonomous traffic analysis system project?
+    - Can you provide information about the team members working on the autonomous traffic analysis system project?
+    - Tell me about the individuals involved in the autonomous traffic analysis system project.
+    - Who is part of the project team for the autonomous traffic analysis system?
+    - Can you give me details about the members of the autonomous traffic analysis system project?
+    - I'd like to know more about the team members working on the autonomous traffic analysis system project.
+    - Can you share information about the project team for the autonomous traffic analysis system?
+    - Tell me more about the individuals involved in the project that utilizes the autonomous traffic analysis system.
+    - Can you provide the names of the team members for the autonomous traffic analysis system project?
+    - I'm curious about the members of the project that involves the autonomous traffic analysis system, can you tell me more?
+    - Who is part of the project team for the autonomous traffic analysis system?
+    - Can you share details about the individuals involved in the project that uses the autonomous traffic analysis system?
+    - I'd like to learn more about the team working on the autonomous traffic analysis system project.
+    - Tell me about the team members who are working on the project that incorporates the use of the autonomous traffic analysis system.
+    - Team members name of traffic analysis
+    - Team members name of analysis
+    - team member’s name of traffic analysis
+    - tell me about team members of traffic analysis
+    - Tell me about team members of analysis
+    - Tell me something about team members of traffic 
+    - tell me something about team members of analysis
+    - Tell me something about team members of traffic analysis
+    - Who are the members of the Traffic Analysis team?
+    - Can you provide me with the names of the individuals working on the Traffic Analysis project?
+    - What is the makeup of the Traffic Analysis team?
+    - can you tell me more about the people behind the Traffic Analysis project?
+    - Who is involved in the development of Traffic Analysis?
+    - Can you give me an overview of the team members working on Traffic Analysis?
+    - What are the names of the team members working on Traffic Analysis?
+    - Can you tell me more about the background and expertise of the team members working on Traffic Analysis?
+    - What roles do the team members play in the Traffic Analysis project?
+    - What are the responsibilities of the team members working on Traffic Analysis?
+
+
+
+- intent: TrafficAnalysisProjectLink
+  examples: |
+    - Can you provide me with the video link for the autonomous traffic analysis system project?
+    - I'm interested in watching a video about the autonomous traffic analysis system project. Can you share the link?
+    - Where can I find the video link for the project related to the autonomous traffic analysis system?
+    - Can you give me the link to the video showcasing the autonomous traffic analysis system project?
+    - I'd like to watch a video about the project that involves the autonomous traffic analysis system. What's the link?
+    - How can I access the video link for the autonomous traffic analysis system project?
+    - Can you share the link to the website or video for the project utilizing the autonomous traffic analysis system?
+    - I'm curious about the video link for the project that incorporates the use of the autonomous traffic analysis system, can you provide it?
+    - Where can I find more information about the autonomous traffic analysis system project, such as a video link or website?
+    - Can you share the link to the video or website for the autonomous traffic analysis system project?
+    - I'd like to learn more about the project related to the autonomous traffic analysis system. Do you have a link to a video or website?
+    - Can you provide me with the link to the video or website for the project that uses the autonomous traffic analysis system?
+    - How can I access the video or website for the project that involves the autonomous traffic analysis system?
+    - Can you give me the link to the video or website showcasing the autonomous traffic analysis system project?
+    - I'm interested in finding the video or website link for the project utilizing the autonomous traffic analysis system. Can you help me with that?
+    - Provide video link of traffic analysis 
+    - provide video link of Traffic Analysis
+    - can you provide of traffic analysis
+    - Can you give me video link of traffic analysis
+    - can you me me video link of analysis
+    - Video link of traffic analysis
+    - video link of analysis
+    - do you have a video that explains traffic analysis?
+    - can you share a video link about traffic analysis with me?
+    - Can you recommend a video on traffic analysis?
+    - Where can I find a video about traffic analysis?
+    - I'm looking for a video that explains traffic analysis, can you help me find one?
+    - Do you know of any good videos that cover traffic analysis?
+    - Can you suggest a video that demonstrates traffic analysis?
+    - Could you provide a link to a video on traffic analysis?
+    - Can you direct me to a video that explains the concept of traffic analysis?
+    - I'd like to watch a video about traffic analysis, do you have any recommendations?
+    - Can you send me a video link on traffic analysis?
+    - I'm interested in learning more about traffic analysis, could you send me a video that explains it?
+    - Do you have a video tutorial on traffic analysis that you can share with me?
+    - Can you point me to a video that discusses the basics of traffic analysis?
+    - Where can I find a good video on traffic analysis that is easy to understand?
+    - I need to learn more about traffic analysis, do you have a video that can help me?
+    - Could you recommend a video on traffic analysis that is suitable for beginners?
+    - Is there a video you can share with me that covers the topic of traffic analysis?
+
+- intent: VoiceToTranscriptProjectInfo
+  examples: |
+    - What is voice to transcript Project?
+    - What is voice to transcript project
+    - What is  voice to transcript 
+    - What is voice to transcript?
+    - What is voice 
+    - What is voice ?
+    - What is transcripts?
+    - What is transcripts
+    - What is Voice to transcripts?
+    - What is Voice to transcripts
+    - Voice
+    - Voice to transcripts
+    - Can you provide more information related to voice to transcripts
+    - Transcripts
+    - Give me information about voice to transcripts
+    - Can you provide more information related to voice to transcripts?
+    - Can you give me details of voice to transcripts project
+    - Give me details of voice to transcripts project
+    - Can you give me details of voice to transcripts project?
+    - Tell me more about the deep learning voice-to-transcript model project.
+    - What can you tell me about the project that involves a voice to transcript model?
+    - I'm curious about the details of the project that uses a voice to transcript model. Can you provide more information?
+    - Can you give me an overview of the deep learning voice to transcript model project?
+    - Tell me about the project that incorporates the use of a voice to transcript model.
+    - I'd like to know more about the project related to the voice to transcript model. Can you provide some details?
+    - What is the voice to transcript model project all about?
+    - Can you share more information about the deep learning voice to transcript model project?
+    - I'm interested in learning more about the project that utilizes a voice to transcript model. Can you provide additional details?
+    - Can you give me an overview of the project that involves a deep learning voice to transcript model?
+    - Tell me about the deep learning voice to transcript model project.
+    - I'm curious about the project that uses a deep learning voice to transcript model. Can you provide more information?
+    - Can you provide more details about the project related to the deep learning voice to transcript model?
+    - Tell me more about the project that incorporates the use of a deep learning voice to transcript model.
+
+- intent: VoiceToTranscriptProjectMembers
+  examples: |
+    - Who are the team members involved in the deep learning voice to transcript model project?
+    - Can you provide information about the team members working on the project with the voice to transcript model?
+    - I'd like to know about the members of the project that involves a voice to transcript model. Can you provide details?
+    - Who is part of the team working on the deep learning voice to transcript model project?
+    - Can you share the names of the team members involved in the project related to the voice to transcript model?
+    - Tell me about the individuals who are part of the project with the deep learning voice to transcript model.
+    - I'm interested in knowing about the team members of the project that uses a voice to transcript model. Can you provide more information?
+    - Who are the team members working on the project that incorporates the use of a voice to transcript model?
+    - Can you provide details about the individuals involved in the project related to the deep learning voice to transcript model?
+    - Tell me about the team members of the deep learning voice to transcript model project.
+    - I'd like to know more about the individuals who are part of the project with the voice to transcript model. Can you provide additional information?
+    - Who is involved in the project that uses a deep learning voice to transcript model? Can you provide details?
+    - Can you share the names of the team members of the project that incorporates the use of a deep learning voice to transcript model?
+
+- intent: VoiceToTranscriptProjectLink
+  examples: |
+    - can you provide video of  voice to transcripts
+    - Video link for voice to transcripts
+    - Video for voice to transcripts
+    - voice to  transcripts video link
+    - Voice transcripts video link
+    - voice to transcripts link
+    - Voice to transcripts video
+    - Project link of voice to transcripts
+    - Voice to transcripts  project 
+    - Can you provide a video link for Voice to Transcripts?
+    - Is there a video available for the Voice to Transcripts project?
+    - Where can I find a video on Voice to Transcripts?
+    - can you give me a link to a video on Voice to Transcripts?
+    - I'm interested in watching a video about Voice to Transcripts, do you have a link?
+    - Do you have a video available that explains the Voice to Transcripts project?
+    - could you please share a video link for Voice to Transcripts?
+    - I'd like to see a demonstration of Voice to Transcripts, can you provide a video link?
+    - Where can I find more information about Voice to Transcripts in video format?
+    - Is there a video that showcases the technology behind Voice to Transcripts?
+    - There is any video for voice to transcripts
+    - There is any video link for voice to transcripts
+    - Can you provide me with the video link for the deep learning voice to transcript model project?
+    - I'm interested in watching a video about the project that involves a deep learning voice to transcript model. Can you share the link?
+    - Where can I find the video link for the project related to the deep learning voice to transcript model?
+    - Can you provide me with the link to the project that uses a voice to transcript model?
+    - I'd like to access the link for the deep learning voice to transcript model project. Can you provide it?
+    - Is there a link available for the project that incorporates the use of a voice to transcript model?
+    - Can you share the project link for the deep learning voice to transcript model?
+    - I'm looking for the link to the project that involves a deep learning voice to transcript model. Can you provide it?
+    - Where can I find more information about the project related to the voice to transcript model? Can you share the link?
+    - I'd like to access the project link for the deep learning voice to transcript model. Can you provide it?
+    - Can you provide me with the link to the project that utilizes a voice to transcript model?
+    - I'm interested in finding the project link for the deep learning voice to transcript model. Can you share it?
+    - Where can I find the link for the project that incorporates the use of a deep learning voice to transcript model?
+    - Can you share the project link for the voice to transcript model project?
+
+- intent: MusicGenreProjectTimeSchedule
+  examples: |
+    - What is the timeline or schedule for the music genre classification project?
+    - Can you provide me with the estimated time or schedule for the music genre classification project?
+    - When is the expected completion date or timeline for the music genre classification project?
+    - I'm curious about the anticipated timeline or schedule for the music genre classification project.
+    - Can you give me an update on the time or schedule for the music genre classification project?
+    - What is the projected timeline for the music genre classification project?
+    - Is there a timeline or schedule available for the music genre classification project?
+    - When are you planning to finish the music genre classification project?
+    - Do you have a timeline or schedule in place for the music genre classification project?
+    - What is the target timeline for completing the music genre classification project?
+    - Can you share any details about the schedule for the music genre classification project?
+    - How long is the expected timeline for the music genre classification project?
+    - When can we expect the music genre classification project to be completed?
+    - What is the planned timeline for the music genre classification project?
+    - time  schedule for  for music genre
+    - Time schedule for genre
+    - time schedule for music
+    - Music genre time schedule
+    - What is the time for  music
+    - What is the time for genre
+    - what is the time schedule for music genre?
+    - What is the time schedule for music genre
+    - What is the time  schedule for music?
+    - What is the  time schedule for  music
+    - what is the time schedule for genre?
+    - What is the time schedule for genre
+    - What is the time for music genre 
+    - what is the time for music genre?
+    - Can you give me the time schedule for music genres?
+    - What are the different music genres and their schedules?
+    - when can I find my favorite music genre on the schedule?
+    - Is there a schedule available for the different music genres?
+    - What is the time for the different music genres?
+    - Can you provide a list of the music genres and their schedules?
+    - I want to know the schedule for the different music genres, can you help me with that?
+    - when can I expect to hear a specific music genre on the schedule?
+    - Where can I find the schedule for the different music genres?
+    - Can you tell me what music genres are playing at different times?
+
+
+- intent: TrafficAnalysisProjectTimeSchedule
+  examples: |
+    - What is the timeline or schedule for the autonomous traffic analysis system project?
+    - Can you provide me with the estimated time or schedule for the autonomous traffic analysis system project?
+    - When is the expected completion date or timeline for the autonomous traffic analysis system project?
+    - I'm curious about the anticipated timeline or schedule for the autonomous traffic analysis system project.
+    - can you give me an update on the time or schedule for the autonomous traffic analysis system project?
+    - What is the projected timeline for the autonomous traffic analysis system project?
+    - Is there a timeline or schedule available for the autonomous traffic analysis system project?
+    - When are you planning to finish the autonomous traffic analysis system project?
+    - Do you have a timeline or schedule in place for the autonomous traffic analysis system project?
+    - what is the target timeline for completing the autonomous traffic analysis system project?
+    - Can you share any details about the schedule for the autonomous traffic analysis system project?
+    - How long is the expected timeline for the autonomous traffic analysis system project?
+    - When can we expect the autonomous traffic analysis system project to be completed?
+    - what is the planned timeline for the autonomous traffic analysis system project?
+    - Time schedule for  traffic Analysis 
+    - Time schedule  for traffic
+    - time schedule for analysis
+    - Get time  schedule of traffic analysis
+    - Get time schedule  of traffic
+    - Get time schedule of analysis
+    - What is the time schedule for traffic analysis project?
+    - Can you provide me with the time schedule of traffic analysis?
+    - When is the next traffic analysis time schedule?
+    - What are the timings for the traffic analysis project?
+    - Tell me the time schedule of the traffic analysis team.
+    - I need to know the time schedule for the traffic analysis project.
+    - Give me the time schedule for traffic analysis.
+    - When can I expect the traffic analysis time schedule?
+    - Provide me with the time schedule of the traffic analysis team.
+    - What is the upcoming time schedule for the traffic analysis project?
+
+
+- intent: RubiksCubeProjectTimeSchedule
+  examples: |
+    - What is the timeline or schedule for the Rubiks cube solver project?
+    - Can you provide me with the estimated time or schedule for the Rubiks cube solver project?
+    - When is the expected completion date or timeline for the Rubiks cube solver project?
+    - I'm curious about the anticipated timeline or schedule for the Rubiks cube solver project.
+    - Can you give me an update on the time or schedule for the Rubiks cube solver project?
+    - What is the projected timeline for the Rubiks cube solver project?
+    - Is there a timeline or schedule available for the Rubiks cube solver project?
+    - When are you planning to finish the Rubiks cube solver project?
+    - Do you have a timeline or schedule in place for the Rubiks cube solver project?
+    - What is the target timeline for completing the Rubiks cube solver project?
+    - Can you share any details about the schedule for the Rubiks cube solver project?
+    - How long is the expected timeline for the Rubiks cube solver project?
+    - When can we expect the Rubiks cube solver project to be completed?
+    - What is the planned timeline for the Rubiks cube solver project?
+    - time schedule for Rubiks Cube Solver
+    - Time schedule for Rubiks
+    - time schedule for cubic solver
+    - Time schedule for rubiks cube solver
+    - Rubiks cube solver time schedule 
+    - Cube solver time schedule
+    - What is the time when rubiks cube solver schedule?
+    - What is the time when cube solver ?
+    - what is the time when rubiks cube solver schedule
+    - What is the time when cube solver 
+    - What is the time schedule for rubiks cube solver project?
+    - Can you provide me with the time schedule of rubiks cube solver?
+    - when is the next rubiks cube solver time schedule?
+    - What are the timings for the rubiks cube solver project?
+    - Tell me the time schedule of the rubiks cube solver team.
+    - I need to know the time schedule for the rubiks cube solver project.
+    - give me the time schedule for rubiks cube solver.
+    - When can I expect the rubiks cube solver time schedule?
+    - Provide me with the time schedule of the rubiks cube solver team.
+
+
+- intent: SelfBalancingBotProjectTimeSchedule
+  examples: |
+    - What is the timeline or schedule for the self-balancing bot project?
+    - Can you provide me with the estimated time or schedule for the self-balancing bot project?
+    - When is the expected completion date or timeline for the self-balancing bot project?
+    - I'm curious about the anticipated timeline or schedule for the self-balancing bot project.
+    - Can you give me an update on the time or schedule for the self-balancing bot project?
+    - What is the projected timeline for the self-balancing bot project?
+    - Is there a timeline or schedule available for the self-balancing bot project?
+    - when are you planning to finish the self-balancing bot project?
+    - Do you have a timeline or schedule in place for the self-balancing bot project?
+    - What is the target timeline for completing the self-balancing bot project?
+    - Can you share any details about the schedule for the self-balancing bot project?
+    - How long is the expected timeline for the self-balancing bot project?
+    - When can we expect the self-balancing bot project to be completed?
+    - what is the planned timeline for the self-balancing bot project?
+    - Time schedule for self balancing Bot
+    - Time schedule for self balancing bot
+    - time schedule for Self Balancing Bot
+    - Self balancing bot time schedule
+    - self Balancing Bot  time schedule
+    - What is the time for  self balancing bot
+    - What is the time for balancing bot
+    - What is the time schedule for self balancing bot?
+    - what is the time schedule for self balancing bot
+    - What is the time  schedule for self balancing bot?
+    - What is the  time schedule for  balancing bot
+    - what is the time schedule for balancing Bot?
+    - What is the time schedule for self balancing bot
+    - What is the time for self balancing bot
+    - What is the time for Self Balancing Bot?
+    - Can you give me the time schedule for Self balancing bot?
+    - What are the different Self balancing bot and their schedules?
+    - When can I find my favorite self balancing bot on the schedule?
+    - Is there a schedule available for the  self balancing bot ?
+    - What is the time for the  self balancing bot?
+    - Can you provide a list of the self balancing bot and their schedules?
+    - I want to know the schedule for the self balancing bot, can you help me with that?
+    - When can I expect to hear a specific self balancing bot on the schedule?
+    - Where can I find the schedule for the self balancing bot?
+    - Can you tell me what self balancing bot are playing at different times?
+
+
+- intent: VoiceToTranscriptProjectTimeSchedule
+  examples: |
+    - What is the timeline or schedule for the deep learning voice-to-transcript project?
+    - Can you provide me with the estimated time or schedule for the deep learning voice-to-transcript project?
+    - When is the expected completion date or timeline for the deep learning voice-to-transcript project?
+    - I'm curious about the anticipated timeline or schedule for the deep learning voice-to-transcript project.
+    - Can you give me an update on the time or schedule for the deep learning voice-to-transcript project?
+    - What is the projected timeline for the deep learning voice-to-transcript project?
+    - Is there a timeline or schedule available for the deep learning voice-to-transcript project?
+    - When are you planning to finish the deep learning voice-to-transcript project
+    - Time schedule for voice to transcripts project
+    - Time schedule for voice to transcripts project
+    - Time schedule for voice to transcripts project
+    - Voice to transcript  bot time schedule
+    - Voice to transcripts  time schedule
+    - What is the time for  voice to trancripts
+    - What is the time for  voice to transcripts
+    - What is the time schedule for voice to transcripts?
+    - What is the time schedule for voice to transcripts
+    - What is the time  schedule for voice to transcripts ?
+    - What is the  time schedule for  voice to transcripts
+    - What is the time schedule for voice to transcript?
+    - What is the time schedule for  voice to transcripts
+    - What is the time for voice to transcripts
+    - What is the time for voice to transcripts?
+    - Can you give me the time schedule for voice to transcripts?
+    - What are the voice to transcripts bot and their schedules?
+    - When can I find my favorite voice to transcripts on the schedule?
+    - Is there a schedule available for the  voice to transcripts ?
+    - What is the time for the  voice to transcripts?
+    - Can you provide a list of the voice to transcripts and their schedules?
+    - I want to know the schedule for the voice to transcripts, can you help me with that?
+    - When can I expect to hear a specific voice to transcripts  on the schedule?
+    - Where can I find the schedule for the voice to transcripts?
+    - Can you tell me what voice to transcripts are playing at different times?
+
+- intent: botrushevents
+  examples: |
+    - botrush event names
+    - Botrush event name
+    - Tell me botrush events name
+    - Name the event of botrush Robotics club
+    - What is the name of the event BotRush?
+    - Can you tell me the name of the BotRush event?
+    - I'm curious about the event name for BotRush.
+    - What's the official name of the BotRush event?
+    - Can you provide me with the name of the event that's happening for BotRush?
+    - What's the name of the event that's part of BotRush?
+    - I want to know the name of the event that's associated with BotRush.
+    - What's the name of the main event happening during BotRush?
+    - Could you tell me what the event is called for BotRush?
+    - What's the event name for BotRush 2023?
+    - What's the official name of the BotRush conference?
+    - I'm interested in the BotRush event, but I don't know the name of it.
+    - What's the event called that's happening as part of BotRush this year?
+
+- intent: roboexpoproj
+  examples: |
+    - Projects of roboexpo event
+    - project of RoboExpo event
+    - projects of Roboexpo event
+    - Can you give me the names of the projects at RoboExpo?
+    - What are the project names for RoboExpo?
+    - I'm curious about the projects featured at RoboExpo, can you provide me with some names?
+    - What are some of the project names that will be presented at RoboExpo?
+    - Can you give me a list of the project names that will be showcased at RoboExpo?
+    - I'm interested in the projects at RoboExpo, what are their names?
+    - What are the names of the projects that will be displayed at RoboExpo?
+    - Can you tell me more about the projects that will be featured at RoboExpo, including their names?
+    - I want to know the names of the projects that will be presented at RoboExpo this year.
+    - What are the names of the robotics projects that are part of RoboExpo?
+    - Could you give me some of the project names for RoboExpo 2023?
+    - I'd like to learn more about the projects being showcased at RoboExpo, can you provide me with their names?
+    - What are the names of the robotics projects that will be displayed at RoboExpo?
+    - Can you give me an idea of the project names that will be part of RoboExpo this year?
+
+- intent: imagebotrush
+  examples: |
+    - Images of botrush events
+    - Give me some images of botrush event
+    - botrush event Images
+    - Botrush event images
+    - Photos of Botrush event
+    - Botrush event photos
+    - Can you show me some images from the BotRush event?
+    - I'm interested in seeing pictures from the BotRush event.
+    - Are there any images available from BotRush?
+    - Can you provide me with some images or photos from the BotRush event?
+    - I want to see some pictures from BotRush, can you show me?
+    - Are there any photos of the BotRush event available?
+    - Can you share some images or videos from the BotRush event?
+    - I'm curious to see what the BotRush event looks like, do you have any pictures?
+    - What kind of images are available from the BotRush event?
+    - Could you show me some images of the BotRush conference?
+
+- intent: get_schedule_trials
+  examples: |
+    - trial
+    - try
+    - query
+
+- intent: inquire_event
+  examples: |
+    - What events are scheduled from [5:00 - 5:05pm]{"entity": "time", "start": "5:00", "end": "5:05"}?
+    - Can you tell me what's happening at [5:00 - 5:05pm]{"entity": "time", "start": "5:00", "end": "5:05"}?
+    - I need to know the events planned between [5:00 - 5:05pm]{"entity": "time", "start": "5:00", "end": "5:05"}.
+    - What's on the agenda from [5:00 - 5:05pm]{"entity": "time", "start": "5:00", "end": "5:05"}?
+    - Tell me the scheduled events at [5:00 - 5:05pm]{"entity": "time", "start": "5:00", "end": "5:05"}.
+    - Can you inform me about the events taking place from [5:00 - 5:05pm]{"entity": "time", "start": "5:00", "end": "5:05"}?
+    - Are there any upcoming events between [5:00 - 5:05pm]{"entity": "time", "start": "5:00", "end": "5:05"}?
+    - What events are coming up from [5:00 - 5:05pm]{"entity": "time", "start": "5:00", "end": "5:05"}?
+    - Tell me about the events scheduled in the future between [5:00 - 5:05pm]{"entity": "time", "start": "5:00", "end": "5:05"}.
+    - What's on the agenda for the future from [5:00 - 5:05pm]{"entity": "time", "start": "5:00", "end": "5:05"}?
+    - Can you inform me about the upcoming events at [5:00 - 5:05pm]{"entity": "time", "start": "5:00", "end": "5:05"}?
+    - Is there anything happening between [5:00 - 5:05pm]{"entity": "time", "start": "5:00", "end": "5:05"}?
+    - Can you check if there are any events scheduled from [5:00 - 5:05pm]{"entity": "time", "start": "5:00", "end": "5:05"}?
+    - Tell me if there's anything going on at [5:00 - 5:05pm]{"entity": "time", "start": "5:00", "end": "5:05"}.
+    - Which team is scheduled from [5:00 - 5:05pm]{"entity": "time", "start": "5:00", "end": "5:05"}?
+    - Can you verify if any team is scheduled at [5:00 - 5:05pm]{"entity": "time", "start": "5:00", "end": "5:05"}?
+    - Which team is  scheduled from [5:00 - 5:05pm]{"entity": "time", "start": "5:00", "end": "5:05"}?
+    - [5:00 - 5:05pm]{"entity": "time", "start": "5:00", "end": "5:05"}
+    - I need to know the team planned for [5:00 - 5:05pm]{"entity": "time", "start": "5:00", "end": "5:05"}.
+    - Which team's on the agenda from [5:00 - 5:05pm]{"entity": "time", "start": "5:00", "end": "5:05"}?
+    - Tell me the scheduled team at [5:00 - 5:05pm]{"entity": "time", "start": "5:00", "end": "5:05"}.
+    - Can you inform me about the teams performing from [5:00 - 5:05pm]{"entity": "time", "start": "5:00", "end": "5:05"}?
+    - is there any upcoming team between [5:00 - 5:05pm]{"entity": "time", "start": "5:00", "end": "5:05"}?
+    - What events are coming up from [5:00 - 5:05pm]{"entity": "time", "start": "5:00", "end": "5:05"}?
+
+- lookup: time
+  examples: |
+    - 5:00 - 5:05pm
+    - 5:05 - 5:10pm
+    - 5:10 - 5:15pm
+    - 5:15 - 5:20pm
+    - 5:20 - 5:25pm
+    - 5:25 - 5:30pm
+    - 5:30 - 5:35pm
+    - 5:35 - 5:40pm
+    - 5:40 - 5:45pm
+    - 5:45 - 5:50pm
+    - 5:50 - 5:55pm
+    - 5:55 - 6:00pm
+    - 6:00 - 6:05pm
+    - 6:05 - 6:10pm
+    - 6:10 - 6:15pm
+    - 6:15 - 6:20pm
+    - 6:20 - 6:25pm
+    - 6:25 - 6:30pm
+    - 6:30 - 6:35pm
+    - 6:35 - 6:40pm
+    - 6:40 - 6:45pm
+    - 6:45 - 6:50pm
+    - 6:50 - 6:55pm
+    - 6:55 - 7:00pm
+    - 7:00 - 7:05pm
+    - 7:05 - 7:10pm
+    - 7:10 - 7:15pm
+    - 7:15 - 7:20pm
+    - 7:20 - 7:25pm
+    - 7:25 - 7:30pm
+    - 7:30 - 7:35pm
+    - 7:35 - 7:40pm
+    - 7:40 - 7:45pm
+    - 7:45 - 7:50pm
+    - 7:50 - 7:55pm
+    - 7:55 - 8:00pm
+    - 8:00 - 8:05pm
+    - 8:05 - 8:10pm
+    - 8:10 - 8:15pm
+    - 8:15 - 8:20pm
+    - 8:20 - 8:25pm
+    - 8:25 - 8:30pm
+    - 8:30 - 8:35pm
+    - 8:35 - 8:40pm
+    - 8:40 - 8:45pm
+    - 8:45 - 8:50pm
+    - 8:50 - 8:55pm
+    - 8:55 - 9:00pm
+    - 9:00 - 9:05pm
+    - 9:05 - 9:10pm
+    - 9:10 - 9:15pm
+    - 9:15 - 9:20pm
+    - 9:20 - 9:25pm
+    - 9:25 - 9:30pm
+    - 9:30 - 9:35pm
+    - 9:35 - 9:40pm
+    - 9:40 - 9:45pm
+    - 9:45 - 9:50pm
+    - 9:50 - 9:55pm
+    - 9:55 - 10:00pm
+    - 10:00 - 10:05pm
+    - 10:05 - 10:10pm
+    - 10:10 - 10:15pm
+    - 10:15 - 10:20pm
+    - 10:20 - 10:25pm
+    - 10:25 - 10:30pm
+    - 10:30 - 10:35pm
+    - 10:35 - 10:40pm
+    - 10:40 - 10:45pm
+    - 10:45 - 10:50pm
+    - 10:50 - 10:55pm
+    - 10:55 - 11:00pm
+    - 11:00 - 11:05pm
+    - 11:05 - 11:10pm
+    - 11:10 - 11:15pm
+    - 11:15 - 11:20pm
+    - 11:20 - 11:25pm
+    - 11:25 - 11:30pm
+    - 11:30 - 11:35pm
+    - 11:35 - 11:40pm
+    - 11:40 - 11:45pm
+    - 11:45 - 11:50pm
+    - 11:50 - 11:55pm
+    - 11:55 - 12:00am
+    - 6 PM - 10 PM
+    - 6 PM - 10 PM
+    - 6 PM - 8 PM
+    - 9 AM - 4 PM
+    - 9 AM - 1 PM
+    - 3 PM - 3:30 PM
+    - 3:30 PM - 8 PM
+    - 9 AM - 12 PM
+    - 3 PM - 7 PM
+    - 2 PM - 4 PM
+    - 5 PM - 7 PM
+    - 09:00am - 09:05am
+    - 09:00am - 09:10am
+    - 09:10am - 09:15am
+    - 09:10am - 09:20am
+    - 09:20am - 09:25am
+    - 09:25am - 09:30am
+    - 09:30am - 09:35am
+    - 09:30am - 09:40am
+    - 09:40am - 09:45am
+    - 09:40am - 09:50am
+    - 09:50am - 09:55am
+    - 09:50am - 10:00am
+    - 10:00am - 10:05am
+    - 10:00am - 10:10am
+    - 10:10am - 10:15am
+    - 10:10am - 10:20am
+    - 10:20am - 10:25am
+    - 10:20am - 10:30am
+    - 10:30am - 10:35am
+    - 10:30am - 10:40am
+    - 10:40am - 10:45am
+    - 10:40am - 10:50am
+    - 10:50am - 10:55am
+    - 10:50am - 11:00am
+    - 11:00am - 11:05am
+    - 11:00am - 11:10am
+    - 11:10am - 11:15am
+    - 11:10am - 11:20am
+    - 11:20am - 11:25am
+    - 11:20am - 11:30am
+    - 11:30am - 11:35am
+    - 11:30am - 11:40am
+    - 11:40am - 11:45am
+    - 11:40am - 11:50am
+    - 11:50am - 11:55am
+    - 11:50am - 12:00pm
+    - 12:00pm - 12:05pm
+    - 12:00pm - 12:10pm
+    - 12:10pm - 12:15pm
+    - 12:10pm - 12:20pm
+    - 12:20pm - 12:25pm
+    - 12:20pm - 12:30pm
+    - 12:30pm - 12:35pm
+    - 12:30pm - 12:40pm
+    - 12:40pm - 12:45pm
+    - 12:40pm - 12:50pm
+    - 12:50pm - 12:55pm
+    - 12:50pm - 01:00pm
+    - 01:00pm - 01:05pm
+    - 01:00pm - 01:10pm
+    - 01:10pm - 01:15pm
+
+- intent: ask_about_decept_of_home_team
+  examples: |
+    - match n engage
+    - match N Engage
+    - MATCH N ENGAGE
+    - match and engage
+    - Match And Engage
+    - tell me about match n engage
+    - When is Match n Engage happening?
+    - What is the schedule for match n engage?
+    - Can you tell me the timetable for Match n Engage?
+    - When are the sessions for Match n Engage taking place?
+    - What are the timings for match n engage?
+    - What's on the agenda for Match n Engage?
+    - When does the first session start for Match n Engage?
+    - What time does Match n Engage end?
+    - What's the duration of Match n Engage?
+    - Can you give me the schedule for Match n engage?
+    - What time does the keynote speaker start at match n Engage?
+    - What's the itinerary for Match n Engage?
+    - When is the networking event scheduled for Match n Engage?
+    - What's the order of events for Match n Engage?
+    - Can you tell me when the breakout sessions are happening at Match n Engage?
+
+- intent: ask_about_sbe
+  examples: |
+    - What's the schedule for Bumble See?
+    - Can you tell me when Bumble See is happening?
+    - When are the sessions for Bumble See?
+    - What are the timings for Bumble See?
+    - What's on the agenda for Bumble See?
+    - When does the first session start for Bumble See?
+    - What time does Bumble See end?
+    - What's the duration of Bumble See?
+    - Can you give me the schedule for Bumble See?
+    - What time does the keynote speaker start at Bumble See?
+    - What's the itinerary for Bumble See?
+    - When is the networking event scheduled for Bumble See?
+    - What's the order of events for Bumble See?
+    - Can you tell me when the breakout sessions are happening at Bumble See?
+    - What workshops are planned for Bumble See?
+  
+- intent: sdoh
+  examples: |
+    - What's the schedule for Descent of Home?
+    - Can you tell me when Descent of Home is happening?
+    - When are the sessions for Descent of Home?
+    - What are the timings for Descent of Home?
+    - What's on the agenda for Descent of Home?
+    - When does the first session start for Descent of Home?
+    - What time does Descent of Home end?
+    - What's the duration of Descent of Home?
+    - Can you give me the schedule for Descent of Home?
+    - What time does the keynote speaker start at Descent of Home?
+    - What's the itinerary for Descent of Home?
+    - When is the networking event scheduled for Descent of Home?
+    - What's the order of events for Descent of Home?
+    - Can you tell me when the breakout sessions are happening at Descent of Home?
+    - What workshops are planned for Descent of Home?
+
+- intent: sdoh2
+  examples: |
+    - What's the schedule for Robo Expo?
+    - Can you tell me when Robo Expo is happening?
+    - When are the sessions for Robo Expo?
+    - What are the timings for Robo Expo?
+    - What's on the agenda for Robo Expo?
+    - When does the first session start for Robo Expo?
+    - What time does Robo Expo end?
+    - What's the duration of Robo Expo?
+    - Can you give me the schedule for Robo Expo?
+    - What time does the keynote speaker start at Robo Expo?
+    - What's the itinerary for Robo Expo?
+    - When is the networking event scheduled for Robo Expo?
+    - What's the order of events for Robo Expo?
+    - Can you tell me when the breakout sessions are happening at Robo Expo?
+    - What workshops are planned for Robo Expo?
+
+- intent: sdoh3
+  examples: |
+    - What's the schedule for Meep Mop?
+    - Can you tell me when Meep Mop is happening?
+    - When are the sessions for Meep Mop?
+    - What are the timings for Meep Mop?
+    - What's on the agenda for Meep Mop?
+    - When does the first session start for Meep Mop?
+    - What time does Meep Mop end?
+    - What's the duration of Meep Mop?
+    - Can you give me the schedule for Meep Mop?
+    - What time does the keynote speaker start at Meep Mop?
+    - What's the itinerary for Meep Mop?
+    - When is the networking event scheduled for Meep Mop?
+    - What's the order of events for Meep Mop?
+    - Can you tell me when the breakout sessions are happening at Meep Mop?
+    - What workshops are planned for Meep Mop?
+
+- intent: sdoh4
+  examples: |
+    - What's the schedule for the Surprise Event?
+    - Can you tell me when the Surprise Event is happening?
+    - When are the sessions for the Surprise Event?
+    - What are the timings for the Surprise Event?
+    - What's on the agenda for the Surprise Event?
+    - When does the first session start for the Surprise Event?
+    - What time does the Surprise Event end?
+    - What's the duration of the Surprise Event?
+    - Can you give me the schedule for the Surprise Event?
+    - What time does the keynote speaker start at the Surprise Event?
+    - What's the itinerary for the Surprise Event?
+    - When is the networking event scheduled for the Surprise Event?
+    - What's the order of events for the Surprise Event?
+    - Can you tell me when the breakout sessions are happening at the Surprise Event?
+    - What workshops are planned for the Surprise Event?
+
+- intent: proctoring_system
+  examples: |
+    - what is proctoring system
+    - What is proctoring system
+    - what is Proctoring System
+    - What is Proctoring System
+    - proctoring
+    - Proctoring
+    - Proctoring system
+    - Proctoring System
+    - proctoring system
+    - proctoring System
+    - Proctify
+    - proctify
+    - PROCTIFY
+    - cheating software
+    - Cheating software
+    - online Proctoring system
+    - Online Proctoring system
+    - online Proctoring
+    - cheat proof 
+    - cheating Detection
+    - Cheating detection
+    - Can we start the proctoring now?
+    - I am ready to begin the proctoring process.
+    - Let's start the proctoring.
+    - I'm done with the test. Can we end the proctoring now?
+    - Can we stop the proctoring process?
+    - Let's end the proctoring.
+    - I need help with the proctoring process.
+    - Can a proctor assist me?
+    - I have a question for the proctor.
+    - The proctoring system is not working properly.
+    - I am having trouble with the proctoring software.
+    - There is an issue with the proctoring process.
+    - Please confirm your identity for the proctor.
+    - Can you verify your identity for the proctoring process?
+    - Let's confirm your identity before we start the test.
+
+- intent: proctoring_system_info
+  examples: |
+    - team members
+    - team members Name
+    - members
+    - Members
+    - Members name
+    - Members Name
+    - project part students
+    - Project part students
+    - Project Part Students
+    - project part student name
+    - Who is working on proctoring system?
+    - Can you tell me who is on proctoring team?
+    - Who are the team members on proctoring?
+    - What is John's role on the proctoring system?
+    - Can you tell me what Sarah does on the proctoring system?
+    - What is the role of the team member who is responsible for design?
+
+- intent: image_to_text
+  examples: |
+    - image_to_text
+    - conversation of image to text
+    - converse of image to text
+    - Image to text
+    - Image to Text
+    - image to text
+    - text
+    - Text
+    - Image
+    - How to convert image into text
+    - How to convert image in to text
+    - How to convert Image into text
+    - How to convert Image in to text
+    - How to convert Image into Text
+    - how to convert Image into text
+    - how to convert image in to text
+    - how to convert Image into text
+
+
+- intent: Wizdroid
+  examples: |
+    - Humanoid Robot
+    - humanoid robot
+    - Humanoid robot
+    - humanoid Robot
+    - voice control robot
+    - Voice control Robot
+    - voice control Humanoid Robot
+    - Voice Control Humanoid Robot
+    - voice control humanoid Robot
+    - voice control humanoid robot
+    - Humanoid Bot
+    - humanoid Bot
+    - humanoid bot
+    - humanoid bot
+    - four wheeler Bot
+    - Four wheeler bot
+    - four wheeler bot
+    - Four wheeler Bot
+    - what is humanoid Robot?
+    - What is humanoid Robot?
+    - What is Humanoid Robot?
+    - what is voice control Humanoid Robot?
+    - What is voice control Humanoid Robot
+    - What is voice control Humanoid Robot
+    - what is voice Control humanoid Robot?
+    - which component is used in humanoid robot?
+    - which component is used in humanoid bot?
+
+- intent: Wizdroid_members
+  examples: |
+    - team members name of voice control Humanoid Robot
+    - Team members name of voice control Humanoid Robot
+    - Wizdroid team members name
+    - wizdroid team members name
+    - wizdroid team members names
+    - Wizdroid team members names
+    - team members of humanoid robot
+    - team members of Humanoid robot
+    - Team members of Humanoid Robot
+    - Team members of Humanoid robot
+
+- intent: Auto_targeting
+  examples: |
+    - what is auto-targeting and alarming security
+    - What is auto-targeting and alarming security
+    - what is auto-targeting
+    - what is autotargeting and alarming security
+    - what is alarming security
+    - What is alarming security
+    - What is Alarming security
+    - what is Autotargeting
+    - what is Autotargeting and alarming security
+    - alarming security
+    - Alarming security
+    - Alarming Security
+    - autotargeting
+    - Autotargeting
+    - auto-targeting
+    - Auto-targeting
+
+
+- intent: Bot_Rush
+  examples:  |
+    - what is botrush event?
+    - what is event
+    - What is botrush event
+    - What is event?
+    - Event's name
+    - event's name
+    - what is botrush?
+    - what is botrush
+    - What is botrush?
+    - What is botrush
+    - what is bot rush?
+    - What is bot rush?
+    - What is Botrush?
+    - Botrush
+    - today's event name botrush
+    - Today's event name botrush
+    - rules and regulations for event
+    - rules and regulations for botrush
+    - rules and regulations for Botrush
+    - rules and regulations for Bot rush
+    - Rules for the event botrush
+    - Rules for the participating in the event botrush
+    - Rules for the Botrush
+    - Rules for the Bot rush
+    - Area specification
+    - area specification
+    - area
+    - Area
+    - Botrush
+    - botrush
+
+- intent: Bot_rush_schedule
+  examples: |
+    - BotRush Schedule
+    - bot_rush schedule
+    - Bot-rush schedule
+    - bot-rush schedule
+    - Schedule of BotRush event
+    - schedule of BotRush Event
+    - What is Botrush event schedule?
+    - What's the schedule for the BotRush event?
+    - Can you tell me when the BotRush event is scheduled to happen?
+    - What's the timeline for the BotRush event
+    - When does the BotRush event start and end
+    - What's the agenda for the BotRush event?
+    - Could you provide me with the schedule for the BotRush event, please?
+    - What are the timings for the BotRush event?
+    - Can you tell me when each session of the BotRush event will take place?
+    - Is there a specific schedule for the BotRush event?
+    - When are the keynote speeches scheduled for the BotRush event?
+    - I'm interested in the BotRush event schedule, can you provide me with more details?
+    - What's the order of events for the BotRush conference?
+    - Can you give me a rundown of the schedule for the BotRush event?
+    - When is the BotRush event taking place, and what's the schedule?
+    - What's the daily schedule for the BotRush event?
+
+- intent: botrush_stage
+  examples: |
+    - stage of botrush
+    - Stage of botrush
+    - stage of Botrush
+    - Stage of Botrush
+    - Stage of Bot rush
+    - Stage of Bot Rush
+    - stage of event
+    - stage of Event
+    - Stage of event
+    - Stage of Event
+    - Type of botrush
+    - Type of bot rush
+    - Type of botRush
+    - types of botrush
+    - types of botRush
+    - types of BotRush
+
+- intent: time_schedule
+  examples: |
+    - time of event
+    - Time of Event
+    - schedule 
+    - schedule of the event
+    - schedule of the Event
+    - schedule of the Botrush
+    - schedule of the Bot rush
+    - Schedule of the event
+
+- intent: Event_place
+  examples: |
+    - place of Event
+    - Place of Event
+    - place name where event is organised
+    - place name where Event is organised
+    - where is botrush event organizing?
+    - where is Botrush event organizing>
+    - where is Bot Rush event organizing?
+    - place
+    - Place
+
+- intent: ballfollowingbot
+  examples: |
+    - ball following bot
+    - ballfollowingbot
+    - Tell me something about ballfollowingbot 
+    - What is ballfollowing bot?
+    - Tell me something about ball following project
+    - Ball Following Bot
+    - ball following bot project
+    - project of ball following bot
+  
+
+- intent: compballfollow
+  examples: |
+    - What is ball following bot?
+    - Ball Following bot
+    - What type of techstack and hardware component are used in ball following bot ?
+    - Tell me something about type of techstack and hardware component are used in ball following bot
+    - Type of techstack and hardware component are used in ball following bot
+    - type of techstack and hardware component are used in ball following bot
+    - Which components are used in ball following bot?
+    - components of ball following bot
+    - component of ball following bot
+    - Name the component of ball following bot
+    - Name the type of techstack and hardware component are used in ball following bot
+  
+- intent: implementballfollow
+  examples: | 
+    - What are the steps taken for making this project?
+    - What are the implementation of this project?
+    - Implementation of the ball following bot
+    - What are the functions of ball following bot?
+    - functions of ball following bot
+    - Steps of ball following bot
+
+- intent: gesturecontrol
+  examples: | 
+    - Gesture control car project
+    - Can you tell me about the project Gesture controlled car ?
+    - What is the Gesture controlled car project's purpose?
+    - What is the objective of the Gesture controlled car project?
+    - What is the gesture controlled car project about?
+    - What are the features of the gesture controlled car?
+    - Can you tell me about the components of the gesture-controlled car?
+    - How does the gesture-controlled project work?
+    - What kinds of gestures can be used to control the project?
+    - What kind of sensors are involved in controlling the project?
+    - What are the hardware components used in the gesture-controlled project?
+    - What is the software used in the gesture-controlled project?
+    - Can you tell me about the components of the gesture-controlled project?
+    - What does the gesture-controlled car look like?
+    - What is the size of the gesture-controlled car?
+
+- intent: membergesture
+  examples: |
+    - member name of gesture control project
+    - team member name of gesture control car 
+    - Who is on the team for this gesture-controlled project?
+    - Can you tell me who is working on gesture-controlled project?
+    - Who are the team members of gesture-controlled project?
+    - Who are the members of gesture-controlled project?
+    - Could you give me a list of team members on gesture-controlled project?
+    - Who's working on gesture-controlled project?
+    - Team member's name for gesture controlled project
+    - Member's name for gesture controlled project
+
+
+- intent: smartsolarcell
+  examples: |
+    - Can you tell me about the smart solar cell project?
+    - What is the purpose of the smart solar cell project?
+    - What are the features of the smart solar cell project? 
+    - Tell me something about smart solar cell project.
+    - Smart Solar Cell Project
+    - What type of solar cells are used in the smart solar cell?
+    - What electronics are used in the smart solar cell?
+    - Can you tell me about the components of the smart solar cell?
+    - Who is working on the smart solar cell project?
+    - What does the smart solar cell look like?
+    - What is the size of the smart solar cell?
+
+- intent: cellphonecontrolled
+  examples: |
+    - Can you tell me about the cell phone controlled bot project?
+    - What is the purpose of the cell phone controlled bot project?
+    - What are the features of the cell phone controlled bot project?|
+    - What kind of motors are used in the cell phone controlled bot?
+    - What sensors are used in the cell phone controlled bot?
+    - Can you tell me about the components of the cell phone controlled bot?
+    - Tell me something about cellphone controlled project
+    - Cell Phone Controlled Bot
+    - Cell Phone controlled bot project
+    - What does the cell phone controlled bot look like?
+    - What is the size of the cell phone controlled bot?
+    - What is the cellphone controlled bot project?
+    - Can you tell me more about the cellphone controlled bot?
+    - What are the features of the cellphone controlled bot?
+
+- intent: chatbotproj
+  examples: |
+    - chatbot project
+    - Tell me something about chatbot project
+    - What is this chatbot for?
+    - What kind of features does this chatbot have?
+    - What technology is this chatbot built on?
+    - What programming languages were used to create this chatbot?
+    - Can you tell me about the tech stack for this chatbot?
+    - What framework is this chatbot built on?
+    - Did you use any specific framework to develop this chatbot?
+    - Which framework is used to develop this chatbot?
+    - What tools were used to develop this chatbot?
+    - Can you tell me about the development tools used for this chatbot?
+    - Which development tools were used in the creation of this chatbot?
+
+- intent: bumble_see_info
+  examples: |
+    - What is the Bumble See event all about?
+    - Can you tell me more about the Bumble See conference?
+    - What's the agenda for the Bumble See event?
+    - Bumble See event
+    - When and where is the Bumble See event happening?
+    - What kind of people attend the Bumble See event?
+    - Is Bumble See an online or in-person event?
+    - Are there any special guests or keynote speakers at the Bumble See event?
+    - What are the topics that will be covered at the Bumble See conference?
+    - How much does it cost to attend the Bumble See event?
+    - Are there any discounts available for Bumble See registration?
+    - Is there a deadline for registration to the Bumble See event?
+    - How do I register for the Bumble See conference?
+    - Can you provide me with a schedule for the Bumble See event?
+    - Are there any workshops or breakout sessions at the Bumble See event?
+    - Are there any volunteer opportunities at the Bumble See conference?
+    - What's the dress code for the Bumble See event?
+    - What safety measures are being taken at the Bumble See event?
+    - Can you provide me with directions to the venue of the Bumble See event?
+    - Is there parking available at the Bumble See event venue?
+    - What are the nearby hotels to the Bumble See conference location?
+    - Will there be any networking opportunities at the Bumble See event?
+    - How many attendees are expected at the Bumble See conference?
+    - Can I bring a guest to the Bumble See event?
+    - bumble see event
+    - Bumble See event
+
+- intent: bumble_see_rule
+  examples: |
+    - Can you tell me more about the rule for attending the Bumble See event?
+    - What are the rules for participating in the Bumble See conference?
+    - Are there any guidelines or rules for attending the Bumble See event?
+    - rules of bumble see
+    - Rules of bumble see
+    - Rules of Bumble See
+    - Rules of Bumble see
+
+- intent: cellphone_controlled_info
+  examples: |
+    - What is a cellphone controlled car?
+    - Can you tell me more about cellphone controlled cars?
+    - How do cellphone controlled cars work?
+    - What are the benefits of using a cellphone controlled car?
+    - Do cellphone controlled cars require any special equipment?
+    - Can I control a cellphone controlled car from anywhere in the world?
+    - Are there any limitations to using a cellphone controlled car?
+    - Can you recommend a good cellphone controlled car for beginners?
+    - What types of cellphone controlled cars are available?
+    - How fast can a cellphone controlled car go?
+    - Is it easy to set up and use a cellphone controlled car?
+    - Can a cellphone controlled car be controlled by multiple users?
+    - Do I need to have a specific type of cellphone to use a cellphone controlled car?
+    - How long does the battery last on a cellphone controlled car?
+    - Are there any safety concerns when using a cellphone controlled car?
+    - cell phone controlled car
+    - Cell Phone Controlled Car
+    - CellPhone Controlled Car
+    - Cellphone controlled car
+    - tell me about cell phone controlled car
+    - tell me about Cellphone controlled car
+    - Tell me about Cellphone controlled car
+    - What is the Match and Engage event all about?
+    - Can you tell me more about the Match and Engage event?
+    - What are the goals of the Match and Engage event?
+    - How does the Match and Engage event work?
+    - Who should attend the Match and Engage event?
+    - What types of organizations participate in the Match and Engage event?
+    - How can I register for the Match and Engage event?
+    - What are the benefits of attending the Match and Engage event?
+    - Can you provide examples of successful connections made at previous Match and Engage events?
+    - What are the most popular topics or themes discussed at the Match and Engage event?
+    - How is the Match and Engage event different from other networking events?
+    - What kind of speakers or presenters can I expect to see at the Match and Engage event?
+    - Can you provide any tips for making the most out of the Match and Engage event?
+    - Is there a cost to attend the Match and Engage event?
+    - How can I become a sponsor or exhibitor at the Match and Engage event?
+    - What is match and engage?            
+
+- intent: RubiksCubeSolverProject
+  examples: |
+    - RubiksCubeSolverProject
+    - Rubiks Cube Solver Project
+    - Rubiks cube solver project
+    - rubiks cube solver project
+    - What is rubik cube solver ?
+    - What is rubiks cube solver ?
+    - what is rubiks cube solver
+    - What is RubiksCubeSolver?
+    - What is Rubiks Cube Solver?
+    - What is Rubiks Cube Solver
+    - Tell me about rubiks cube solver
+    - Tell me about Rubiks Cube Solver
+    - Tell me about rubiks cube solver
+    - Tell me something about rubiks
+    - Tell me some things about cube solver
+
+- intent: RubiksCubeSolverMembers
+  examples: |
+    - Members of Rubiks Cube Solver
+    - Members of Rubiks cube solver
+    - Members of rubikscubesolver
+    - Members name of rubiks
+    - Members name of rubiks cube
+    - Members name of rubiks cube
+    - Member’s name of rubiks cube solver
+    - Member’s name of cube solver
+    - Tell me about the name of team members of rubiks cubic solver
+    - Tell me about name of team members of rubiks
+    - Tell me about name of team members of cubic solver
+    - Can you provide me with the names of the members of the Rubik's Cube Solver team?
+    - Who are the members of the Rubik's Cube Solver team?
+    - What is the team makeup of the Rubik's Cube Solver project?
+    - Who is involved in the development of the Rubik's Cube Solver?
+    - Can you tell me more about the people behind the Rubik's Cube Solver?
+    - What is the name of the team working on the Rubik's Cube Solver?
+    - Who are the key members of the Rubik's Cube Solver team?
+    - Can you give me a rundown of the team members of the Rubik's Cube Solver project?
+    - What are the names of the individuals working on the Rubik's Cube Solver project?
+    - Who is responsible for the Rubik's Cube Solver's development, and who are the team members?
+
+# - intent: Start
+#   examples: |
+#     - /start
+#     - Start
+
+
+# - intent: TrafficAnalysisProjectInfo
+#   examples: |
+
+
+- intent: cellphone_controlled_car_rule
+  examples: |
+    - rules of match and engage
+    - Bot Specification
+    - BotSpecification
+    - botspecification
+    - bot specification
+    - bot Specification
+    - Can you explain the rules of the final round of the cellphone controlled?
+    - What are the rules that participants need to follow in the final round of cellphone controlled?
+    - Are there any specific guidelines or restrictions for the final round of cellphone controlled?
+    - Can you provide more information on how the final round will be judged of cellphone controlled?
+    - What are the components used in the cellphone controlled car?
+    - Can you provide more information about the hardware and software components required for cellphone controlled car?
+    - Are there any specific brands or models of components that need to be used for cell phone controlled car?
+    - Do participants need to bring their own components or will they be provided for cell phone controlled car?
+    - How will the cellphone controlled car bots be judged in the final round?
+    - What criteria will be used to evaluate the cellphone controlled car bots?
+    - Will the cellphone controlled car bots be judged based on their functionality, design, or both?
+    - Can you provide more information on the scoring system used for the judging process?
+    - Can you provide feedback on how my cellphone controlled car bot performed in the competition?
+    - What were the strengths and weaknesses of my cellphone controlled car bot?
+    - How can I improve my cellphone controlled car bot for future competitions?
+    - Are there any specific areas where my cellphone controlled car bot needs improvement?
+    - What are the rules and regulations of the Match and Engage event?
+    - Can you provide me with the guidelines for attending the Match and Engage event?
+    - What is the dress code for the Match and Engage event?
+    - Are there any restrictions on who can attend the Match and Engage event?
+    - What are the rules around networking and exchanging contact information at the Match and Engage event?
+    - Is there a code of conduct that attendees need to adhere to at the Match and Engage event?
+    - What are the terms and conditions of attending the Match and Engage event?
+    - Can you provide information on the cancellation and refund policies for the match and engage event
+    - Are there any age restrictions for attending the Match and Engage event?
+    - What are the rules regarding photography and audio/video recording at the match and Engage
+    - What is the policy on bringing guests to the Match and Engage event?
+    - Is there a limit on the number of attendees that can be registered from a single organization for the Match and Engage event?
+    - What are the safety protocols and measures in place for the Match and Engage event?
+    - Are there any food or beverage restrictions for the Match and Engage event?
+    - What happens if I violate any of the rules or regulations of the Match and Engage
+
+- intent: usechatbot
+  examples: |
+    - use chatbot
+    - Can you help me with how to use the chatbot?
+    - What are the features of chatbot?
+    - What are the features of this chatbot?
+    - Can you tell me what this chatbot can do?
+    - What functionalities does the chatbot have?
+    - What are the capabilities of this chatbot?
+    - What kind of services does the chatbot offer?
+    - Can you give me an overview of the chatbot's features?
+    - I want to know more about the features of the chatbot.
+    - Can you explain the features of the chatbot in more detail?
+    - What are the different things I can do with the chatbot?
+    - Does the chatbot have any special features?
+    - What makes this chatbot unique?
+    - How is this chatbot different from others?
+    - What kind of tasks can the chatbot perform?
+    - What are the benefits of using this chatbot?
+    - How can this chatbot help me?
+
+- intent: whatchatbot
+  examples: |
+    - What is a chatbot?
+    - Can you explain what a chatbot is?
+    - I'm not sure what a chatbot is, can you explain it to me?
+    - What does the term chatbot mean?
+    - What exactly is a chatbot?
+    - Could you give me a brief description of a chatbot?
+    - I've heard the term chatbot before, but I'm not sure what it means.
+    - What is the purpose of a chatbot?
+    - How does a chatbot work?
+    - What are the benefits of using a chatbot?
+    - What are the different types of chatbots?
+    - Can you provide me with a definition of chatbot?
+    - I'm interested in chatbots, but I don't really know what they are.
+    - Can you give me a general idea of what a chatbot does?
+    - What is the history of chatbots?
+
+- intent: meepmop
+  examples: |
+    - meepmop event
+    - What is meepmop event?
+    - What is the meepmop event?
+    - Can you provide an overview of the meepmop project?
+    - What are the goals of the meepmop project?
+    - How does the meepmop project work?
+    - What is the purpose of the meepmop project?
+    - Can you explain what meepmop is and how it is used?
+    - Is meepmop a software tool or a physical product?
+    - How does meepmop differ from other project management tools?
+    - What are the main features of meepmop?
+    - How can meepmop benefit my organization?
+    - What industries or fields is meepmop most useful for?
+    - Who is the target audience for meepmop?
+    - Can you provide examples of how meepmop has been used successfully in the past?
+    - What is the history of meepmop?
+    - How can I get started using meepmop?
+
+- intent: followup
+  examples: |
+    - link of robotics club
+    - followup pages of robotics club
+    - Can you share the social media links of your robotics club?
+    - I'm interested in following your robotics club on social media. Where can I find your links?
+    - Could you provide me with the social media handles for your robotics club?
+    - I'd like to connect with your robotics club on social media. Where can I find your links?
+    - Can you point me in the direction of your robotics club's social media accounts?
+    - Where can I find your robotics club's social media profiles?
+    - I'm looking to follow your robotics club on social media. What are your handles?
+    - Can you share your robotics club's social media links with me?
+    - I'd like to stay updated with your robotics club's activities. What are your social media links?
+    - Where can I find your robotics club's social media pages?
+    - Can you provide me with the social media handles for your robotics club's official accounts?
+    - I'm interested in joining your robotics club's community online. What are your social media links?
+    - What are the social media links for your robotics club's official accounts?
+    - Could you please share the social media profiles of your robotics club with me?
+    - Where can I follow your robotics club on social media?
+
+- intent: inquire_robo_expo_event
+  examples: |
+    - robo expo
+    - roboexpo
+    - Roboexpo
+    - ROBOEXPO
+    - Can you tell me more about the Robo Expo event?
+    - What is the Robo Expo event all about?
+    - I'm interested in learning more about the Robo Expo event.
+    - When is the Robo Expo event taking place?
+    - What are the dates for the Robo Expo event?
+    - Is the Robo Expo event happening soon?
+    - Where is the Robo Expo event being held?
+    - What is the venue for the Robo Expo event?
+    - Can you give me directions to the Robo Expo event?
+    - How can I register for the Robo Expo event?
+    - What is the registration process for the Robo Expo event?
+    - Is there a deadline for registering for the Robo Expo event?
+    - Who are the speakers at the Robo Expo event?
+    - Can you give me a list of the speakers at the Robo Expo event?
+    - Are there any notable speakers at the Robo Expo event?
+    - What is the schedule for the Robo Expo event?
+    - What can I expect to see at the Robo Expo event?
+    - Will there be any workshops or panel discussions at the Robo Expo event?
+    - How much does it cost to attend the Robo Expo event?
+    - What is the price of admission for the Robo Expo event?
+    - Are there any discounts available for the Robo Expo event?
+    - Is there a student discount for the Robo Expo event?
+    - Are there any group discounts available for the Robo Expo event?
+    - How can I get a discount for the Robo Expo event?
+    - How can I become a sponsor for the Robo Expo event?
+    - Are there any sponsorship opportunities for the Robo Expo event?
+    - Who do I contact for sponsorship information for the Robo Expo event?
+    - Who are the exhibitors at the Robo Expo event?
+    - Can you give me a list of the companies and startups at the Robo Expo event?
+    - Are there any notable exhibitors at the Robo Expo event?
+    - what is roboexpo event?
+    - What is roboexpo event?
+
+- intent: inquire_robo_expo_projects
+  examples: |
+    - What are the projects in robo expo event
+    - What is in the robo expo event
+    - What are the Projects in Robo Expo Event
+    - Projects in robo expo event
+    - projects in Robo expo event
+    - Projects in robo expo event
+    - What kind of projects will be showcased at the Robo Expo event?
+    - Which companies or startups will be displaying their projects at the Robo Expo event?
+    - Can you tell me more about the projects that will be displayed at the Robo Expo event?
+    - What are some of the innovative projects that will be on display at the Robo Expo event?
+    - Will there be any new projects being introduced at the Robo Expo event?
+    - Can you give me a sneak peek of the projects that will be showcased at the Robo Expo event?
+    - What are some of the most exciting projects that will be on display at the Robo Expo event?
+    - Which universities or research institutes will be displaying their projects at the Robo Expo event?
+    - Are there any award-winning projects that will be on display at the Robo Expo event?
+    - How many projects will be displayed at the Robo Expo event?
+    - What are some of the latest developments in robotics that will be showcased at the Robo Expo event?
+    - Which industries will the projects on display at the Robo Expo event be targeting?
+
+- intent: inquire_robo_expo_organizers
+  examples: |
+    - Who are the organizers of the Robo Expo event?
+    - Can you tell me more about the people behind the Robo Expo event?
+    - Who can I contact if I want to become a mentor for the projects showcased at the Robo Expo event?
+    - How can I get in touch with the organizers of the Robo Expo event?
+    - Can you give me the contact details for the organizers of the Robo Expo event?
+    - What kind of support can the organizers of the Robo Expo event provide for the showcased projects?
+    - Are there any notable mentors or advisors involved in the Robo Expo event?
+    - How can I become a sponsor for the Robo Expo event?
+    - What are the benefits of becoming a sponsor for the Robo Expo event?
+    - Can you give me more information about the mentorship program for the Robo Expo event?
+    - How can I apply to become a mentor for the projects showcased at the Robo Expo event?
+    - Are there any notable companies or organizations sponsoring the Robo Expo event?
+
+- intent: ask_decept_of_home
+  examples: |
+    - What is the Decept of Home event about?
+    - Can you provide more information about the Decept of Home event?
+    - What are the highlights of the Decept of Home event?
+    - What kind of activities can I expect at the Decept of Home event?
+    - Who are the speakers for the Decept of Home event?
+    - Is there an agenda available for the Decept of Home event?
+    - What is the registration process for the Decept of Home event?
+    - How much does it cost to attend the Decept of Home event?
+    - Can you tell me more about the venue for the Decept of Home event?
+    - What is the expected turnout for the Decept of Home event?
+    - Are there any discounts available for early bird registration for the Decept of Home event?
+    - What is the target audience for the Decept of Home event?
+    - Will there be any workshops or hands-on sessions at the Decept of Home event?
+    - What are the rules and regulations for attending the Decept of Home event?
+    - Are there any food or beverage options available at the Decept of Home event?
+    - decept of home event sounds interesting, can you tell me more about it?
+    - have you heard of the Decept of Home event happening soon?
+    - I want to attend the Decept of Home event, what do I need to know?
+    - Is it possible to register for the Decept of Home event online?
+    - Can you provide a brief overview of the Decept of Home event?
+    - Do you have any insider tips for attending the Decept of Home event?
+    - Is it mandatory to wear a badge at the Decept of Home event?
+    - How does the Decept of Home event differ from other home events?
+    - Is there an upcoming event for home automation projects?
+    - Can you tell me about any events related to home automation projects?
+    - I'm interested in attending an event about home automation projects. Do you have any recommendations?
+    - What events are there for people interested in home automation projects?
+    - Are there any meetups or conferences specifically for home automation projects?
+    - Where can I find information about home automation project events?
+    - What kind of events related to home automation projects are happening soon?
+    - I want to learn more about home automation projects. What events should I attend?
+    - Are there any virtual events for home automation projects?
+    - I'm new to home automation projects. Are there any beginner-friendly events?
+    - Which organizations or companies host events about home automation projects?
+    - How can I register for an event about home automation projects?
+    - What is the cost to attend an event about home automation projects?
+    - Can you recommend any keynote speakers for events about home automation projects?
+    - I'm looking for hands-on workshops or demos related to home automation projects. What events should I attend?
+    - Are there any events about home automation projects that focus on sustainability or energy efficiency?
+
+- intent: humanoid_info
+  examples: |
+    - Tell me about the humanoid robot project .
+    - Purpose of the humanoid robot project?
+    - Features of the humanoid robot project?|
+    - What components are used in the humanoid robot project?
+    - Give me the details about the components of the humanoid robot project ?
+    - Tell me something about humanoid robot project
+    - About humanoid robot project .
+    - How is the humanoid robot project view .
+    - What are the dimensions of the humanoid robot project?
+    - What is the humanoid robot project?
+    - Please tell me more about the humanoid robot project .
+
+- intent: humanoid_member
+  examples: |
+    - Members of the humanoid robot project?
+    - The team working on the humanoid robot project
+    - About the people involved in the humanoid robot project?
+    - Tell me about the team behind humanoid robot project
+    - Who are  working on humanoid robot project?
+    - Details about the team members of the humanoid robot project
+    - Humanoid robot project's members .
+    - What is the composition of the team working on humanoid robot project?
+    - What team is for humanoid robot project?
+    - What roles do the team members play in humanoid robot project?
+    - Please , tell me about the responsibilities of the team members of humanoid robot project
+    - What are the backgrounds of the team members in humanoid robot project?
+    - Tell me about the expertise of the team members of humanoid robot project
+    - Collaborators in the music genre classification project?
+    - Team who completed or made the humanoid .
+
+- intent: humanoid_link
+  examples: |
+    - Video link for the humanoid robot project?
+    - Access of the video link for the humanoid robot project?
+    - Link for the project that demonstrates humanoid robot project?
+    - Share the video link for the humanoid robot project?
+    - Direct me to the video for the humanoid robot project?
+    - Tell me about the link associated with the humanoid robot project .
+    - Where can I go to find thelink for the humanoid robot project?
+    - Access the link for the humanoid robot project?
+    - Provide me with the link  showcasing the humanoid robot project?
+    - Tell me about the link associated with the humanoid robot project .
+
+  #XY Plotter
+
+- intent: XYPlotter_info
+  examples: |
+    - About the XY Plotter project .
+    - Features of the XY Plotter project?
+    - Components are used in the XY Plotter project?
+    - Details of the components of XY Plotter project ?
+    - Purpose of the the XY Plotter project? 
+    - What is the XY Plotter project?.
+    - XY Plotter project's view .
+    - Dimensions of the XY Plotter project?
+
+- intent: XYPlotter_member
+  examples: |
+    - Members of the XY Plotter project?
+    - Team working on the XY Plotter project
+    - About the people involved in XY Plotter project?
+    - Tell me about the team behind XY Plotter project.
+    - Working on XY Plotter project?
+    - Details about the team members of XY Plotter project
+    - XY Plotter project's members .
+    - Composition of the team working on XY Plotter project?
+    - Team is for XY Plotter project?
+    - Team members play in XY Plotter project?
+    - Responsibilities of the team members of XY Plotter project
+    - Backgrounds of the team members in XY Plotter project?
+    - Collaborators in XY Plotter project?
+    - Team who made the XY Plotter project .
+
+- intent: XYPlotter_link
+  examples: |
+    - Video link for the XY Plotter project?
+    - Access of the video link for XY Plotter project?
+    - Access of the link for XY Plotter project?
+    - Link for the project that demonstrates XY Plotter project?
+    - Share the video link for XY Plotter project?
+    - Direct me to the video for XY Plotter project?
+    - Tell me about the link associated with XY Plotter project .
+    - Where can I go to find the link for XY Plotter project?
+    - Provide me with the link showcasing XY Plotter project?
+
+#Automatic ChessBoard
+
+- intent: AutoChessBoard_info
+  examples: |
+    - The automatic chessboard project .
+    - Purpose of the automatic chessboard project?
+    - Features of the automatic chessboard project?
+    - What components are used in the automatic chessboard project?
+    - Components of the automatic chessboard project ?
+    - Tell me something about the automatic chessboard project .
+    - Please tell me more about the automatic chessboard project .
+    - About the automatic chessboard project .
+    - How is the automatic chessboard project view .
+    - Dimensions of the automatic chessboard project?
+    - What is the automatic chessboard project?
+    - Chessboard Project .
+
+- intent: AutoChessBoard_member
+  examples: |
+    - Members of the automatic chessboard project?
+    - The team working on the automatic chessboard project
+    - About the people involved in the automatic chessboard project?
+    - Tell me about the team behind automatic chessboard project
+    - Who are  working on automatic chessboard project?
+    - Team who completed or made automatic chessboard project 
+    - Team members of the automatic chessboard project
+    - Automatic chessboard project's members .
+    - What is the composition of the team working on automatic chessboard project?
+    - What team is for automatic chessboard project?
+    - What roles do the team members play in automatic chessboard project?
+    - What are the backgrounds of the team members in automatic chessboard project?
+    - Tell me about the expertise of the team members of automatic chessboard project
+    - Collaborators in automatic chessboard project?
+
+- intent: AutoChessBoard_links
+  examples: |
+    - Video link for the automatic chessboard project?
+    - Access of the video link for the automatic chessboard project?
+    - Link for the project that demonstrates automatic chessboard project?
+    - Share the video link for the automatic chessboard project?
+    - Direct me to the video for the automatic chessboard project?
+    - Tell me about the link associated with the automatic chessboard project .
+    - Where can I go to find thelink for the automatic chessboard project?
+    - Access the link for the automatic chessboard project?
+    - Provide me with the link  showcasing the automatic chessboard project?
+    - Tell me about the link associated with the automatic chessboard project .
+
+#Robotic Room Automation
+
+- intent: RoomAutomation_info
+  examples: |
+    - The Robotic Room Automation project.
+    - How do Robotic Room Automation works to automate room ?
+    - Details about Robotic Room Automation project?
+    - What is Robotic Room Automation project about?
+    - Problems that Robotic Room Automation project solve . 
+    - Information about the Robotic Room Automation project?
+    - How does Robotic Room Automation project work?
+    - Purpose of robotic room automation project?
+    - Direct me to the details of robotic room automation project?
+    - About robotic room automation project and how it works.
+    - Documentation for robotic room automation project?
+    - Progress on robotic room automation project?
+    - Making the robotic room automation project .
+    - Update on the progress of the robotic room automation project .
+
+- intent: RoomAutomation_member
+  examples: |
+    - Members of the robotic room automation project?
+    - Team for robotic room automation project?
+    - People behind the robotic room automation project .
+    - Provide information about the people working on robotic room automation project?
+    - Individuals or team behind the robotic room automation project.
+    - Students responsible for robotic room automation project?
+    - Share details about the team members involved in robotic room automation project?
+    - Contributors of the robotic room automation project.
+    - Overview of the team working on robotic room automation project?
+    - Individuals involved in the robotic room automation project.
+    - People responsible for the robotic room automation project?
+    - Roles of members of robotic room automation project .
+    - Team members of the robotic room automation project?
+    - About the team working on robotic room automation project?
+    - Responsible for the robotic room automation project?
+    - Leader of robotic room automation project .
+    - Robotic room automation project members .
+
+- intent: RoomAutomation_link
+  examples: |
+    - Video link for the room automation project .
+    - Link to the project that uses a room automation project
+    - Share the project link for room automation project.
+    - Access of the video link for the room automation project
+    - Link for the project that shows room automation project
+    - Share the video link for the room automation project
+    - Direct me to the video for the room automation project
+    - Tell me about the link associated with the room automation project .
+
+#Spider Bot Project
+
+- intent: SpiderBot_info
+  examples: |
+    - Spider bot project
+    - Project about for the spider bot project?
+    - Information about the project related to the spider bot project .
+    - More about the project involving the spider bot project.
+    - About the project that focuses on the spider bot project.
+    - Details about the project related to the spider bot project?
+    - What do the spider bot project do ?
+    - Please , Share information about the spider bot project.
+    - About the project that utilizes the spider bot project .
+    - Project details for spider bot project.
+    - Project information for the spider bot project?
+
+- intent: SpiderBot_members
+  examples: |
+    - Members of the spider bot project
+    - Team working on the spider bot project
+    - About the people involved in the spider bot project .
+    - Tell me about the team behind spider bot project
+    - Who are  working on spider bot project?
+    - Details about the team members of the spider bot project
+    - spider bot project's members .
+    - Composition of the team working on spider bot project?
+    - Team for spider bot project?
+    - Responsibilities of the team members of spider bot project.
+    - Collaborators in the spider bot project?
+    - Team who made the spider bot project .
+
+- intent: SpiderBot_links
+  examples: |
+    - Video link for the spider bot project?
+    - Access of the video link for the spider bot project?
+    - Link for the project that demonstrates spider bot project .
+    - Share the video link for the spider bot project?
+    - Direct me to the video for the spider bot project?
+    - Link associated with spider bot project.
+    - Link for spider bot project?
+    - Provide me with the link showcasing spider bot project.
+    - Tell me about the link associated with spider bot project .
+
+#Robotic Arm Project
+
+- intent: RoboticArm_info
+  examples: |
+    - Robotic Arm Project .
+    - Purpose of the robotic arm project?
+    - Features of the robotic arm project?
+    - Components are used in robotic arm project?
+    - Details about the components of the robotic arm project ?
+    - About robotic arm project .
+    -  the robotic arm project view .
+    - What is the robotic arm project?
+    - Please tell me more about the robotic arm project .
+
+- intent: RoboticArm_member
+  examples: |
+    - Members of the robotic arm project?
+    - The team working on the robotic arm project
+    - About the people involved in the robotic arm project?
+    - The team behind robotic arm project
+    - Who are  working on robotic arm project?
+    - Details about the team members of robotic arm project
+    - Robotic arm project's members .
+    - Composition of the team working on robotic arm project?
+    - Team for robotic arm project.
+    - Backgrounds of the team members in robotic arm project?
+    - Collaborators in the robotic arm project?
+    - Team who completed robotic arm project.
+
+- intent: RoboticArm_link
+  examples: |
+    - Video link for robotic arm project ?
+    - Access of the video link for the robotic arm project?
+    - Demonstrates robotic arm project.
+    - Share the video link for the robotic arm project?
+    - Direct me to the video for the robotic arm project?
+    - The link associated with the robotic arm project .
+    - Access the link for the robotic arm project?
+    - Provide me with the link  showcasing robotic arm project?
+
+- intent: humanoid_info
+  examples: |
+    - Tell me about the humanoid robot project .
+    - Purpose of the humanoid robot project?
+    - Features of the humanoid robot project?|
+    - What components are used in the humanoid robot project?
+    - Give me the details about the components of the humanoid robot project ?
+    - Tell me something about humanoid robot project
+    - About humanoid robot project .
+    - How is the humanoid robot project view .
+    - What are the dimensions of the humanoid robot project?
+    - What is the humanoid robot project?
+    - Please tell me more about the humanoid robot project .
+
+- intent: humanoid_member
+  examples: |
+    - Members of the humanoid robot project?
+    - The team working on the humanoid robot project
+    - About the people involved in the humanoid robot project?
+    - Tell me about the team behind humanoid robot project
+    - Who are  working on humanoid robot project?
+    - Details about the team members of the humanoid robot project
+    - Humanoid robot project's members .
+    - What is the composition of the team working on humanoid robot project?
+    - What team is for humanoid robot project?
+    - What roles do the team members play in humanoid robot project?
+    - Please , tell me about the responsibilities of the team members of humanoid robot project
+    - What are the backgrounds of the team members in humanoid robot project?
+    - Tell me about the expertise of the team members of humanoid robot project
+    - Collaborators in the music genre classification project?
+    - Team who completed or made the humanoid .
+
+- intent: humanoid_link
+  examples: |
+    - Video link for the humanoid robot project?
+    - Access of the video link for the humanoid robot project?
+    - Link for the project that demonstrates humanoid robot project?
+    - Share the video link for the humanoid robot project?
+    - Direct me to the video for the humanoid robot project?
+    - Tell me about the link associated with the humanoid robot project .
+    - Where can I go to find thelink for the humanoid robot project?
+    - Access the link for the humanoid robot project?
+    - Provide me with the link  showcasing the humanoid robot project?
+    - Tell me about the link associated with the humanoid robot project .
+
+#XY Plotter
+
+- intent: XYPlotter_info
+  examples: |
+    - About the XY Plotter project .
+    - Features of the XY Plotter project?
+    - Components are used in the XY Plotter project?
+    - Details of the components of XY Plotter project ?
+    - Purpose of the the XY Plotter project? 
+    - What is the XY Plotter project?.
+    - XY Plotter project's view .
+    - Dimensions of the XY Plotter project?
+
+- intent: XYPlotter_member
+  examples: |
+    - Members of the XY Plotter project?
+    - Team working on the XY Plotter project
+    - About the people involved in XY Plotter project?
+    - Tell me about the team behind XY Plotter project.
+    - Working on XY Plotter project?
+    - Details about the team members of XY Plotter project
+    - XY Plotter project's members .
+    - Composition of the team working on XY Plotter project?
+    - Team is for XY Plotter project?
+    - Team members play in XY Plotter project?
+    - Responsibilities of the team members of XY Plotter project
+    - Backgrounds of the team members in XY Plotter project?
+    - Collaborators in XY Plotter project?
+    - Team who made the XY Plotter project .
+
+- intent: XYPlotter_link
+  examples: |
+    - Video link for the XY Plotter project?
+    - Access of the video link for XY Plotter project?
+    - Access of the link for XY Plotter project?
+    - Link for the project that demonstrates XY Plotter project?
+    - Share the video link for XY Plotter project?
+    - Direct me to the video for XY Plotter project?
+    - Tell me about the link associated with XY Plotter project .
+    - Where can I go to find the link for XY Plotter project?
+    - Provide me with the link showcasing XY Plotter project?
+
+#Automatic ChessBoard
+
+- intent: AutoChessBoard_info
+  examples: |
+    - The automatic chessboard project .
+    - Purpose of the automatic chessboard project?
+    - Features of the automatic chessboard project?
+    - What components are used in the automatic chessboard project?
+    - Components of the automatic chessboard project ?
+    - Tell me something about the automatic chessboard project .
+    - Please tell me more about the automatic chessboard project .
+    - About the automatic chessboard project .
+    - How is the automatic chessboard project view .
+    - Dimensions of the automatic chessboard project?
+    - What is the automatic chessboard project?
+    - Chessboard Project .
+
+- intent: AutoChessBoard_member
+  examples: |
+    - Members of the automatic chessboard project?
+    - The team working on the automatic chessboard project
+    - About the people involved in the automatic chessboard project?
+    - Tell me about the team behind automatic chessboard project
+    - Who are  working on automatic chessboard project?
+    - Team who completed or made automatic chessboard project 
+    - Team members of the automatic chessboard project
+    - Automatic chessboard project's members .
+    - What is the composition of the team working on automatic chessboard project?
+    - What team is for automatic chessboard project?
+    - What roles do the team members play in automatic chessboard project?
+    - What are the backgrounds of the team members in automatic chessboard project?
+    - Tell me about the expertise of the team members of automatic chessboard project
+    - Collaborators in automatic chessboard project?
+
+- intent: AutoChessBoard_links
+  examples: |
+    - Video link for the automatic chessboard project?
+    - Access of the video link for the automatic chessboard project?
+    - Link for the project that demonstrates automatic chessboard project?
+    - Share the video link for the automatic chessboard project?
+    - Direct me to the video for the automatic chessboard project?
+    - Tell me about the link associated with the automatic chessboard project .
+    - Where can I go to find thelink for the automatic chessboard project?
+    - Access the link for the automatic chessboard project?
+    - Provide me with the link  showcasing the automatic chessboard project?
+    - Tell me about the link associated with the automatic chessboard project .
+
+#Robotic Room Automation
+
+- intent: RoomAutomation_info
+  examples: |
+    - The Robotic Room Automation project.
+    - How do Robotic Room Automation works to automate room ?
+    - Details about Robotic Room Automation project?
+    - What is Robotic Room Automation project about?
+    - Problems that Robotic Room Automation project solve . 
+    - Information about the Robotic Room Automation project?
+    - How does Robotic Room Automation project work?
+    - Purpose of robotic room automation project?
+    - Direct me to the details of robotic room automation project?
+    - About robotic room automation project and how it works.
+    - Documentation for robotic room automation project?
+    - Progress on robotic room automation project?
+    - Making the robotic room automation project .
+    - Update on the progress of the robotic room automation project .
+
+- intent: RoomAutomation_member
+  examples: |
+    - Members of the robotic room automation project?
+    - Team for robotic room automation project?
+    - People behind the robotic room automation project .
+    - Provide information about the people working on robotic room automation project?
+    - Individuals or team behind the robotic room automation project.
+    - Students responsible for robotic room automation project?
+    - Share details about the team members involved in robotic room automation project?
+    - Contributors of the robotic room automation project.
+    - Overview of the team working on robotic room automation project?
+    - Individuals involved in the robotic room automation project.
+    - People responsible for the robotic room automation project?
+    - Roles of members of robotic room automation project .
+    - Team members of the robotic room automation project?
+    - About the team working on robotic room automation project?
+    - Responsible for the robotic room automation project?
+    - Leader of robotic room automation project .
+    - Robotic room automation project members .
+
+- intent: RoomAutomation_link
+  examples: |
+    - Video link for the room automation project .
+    - Link to the project that uses a room automation project
+    - Share the project link for room automation project.
+    - Access of the video link for the room automation project
+    - Link for the project that shows room automation project
+    - Share the video link for the room automation project
+    - Direct me to the video for the room automation project
+    - Tell me about the link associated with the room automation project .
+
+#Spider Bot Project
+
+- intent: SpiderBot_info
+  examples: |
+    - Spider bot project
+    - Project about for the spider bot project?
+    - Information about the project related to the spider bot project .
+    - More about the project involving the spider bot project.
+    - About the project that focuses on the spider bot project.
+    - Details about the project related to the spider bot project?
+    - What do the spider bot project do ?
+    - Please , Share information about the spider bot project.
+    - About the project that utilizes the spider bot project .
+    - Project details for spider bot project.
+    - Project information for the spider bot project?
+
+- intent: SpiderBot_members
+  examples: |
+    - Members of the spider bot project
+    - Team working on the spider bot project
+    - About the people involved in the spider bot project .
+    - Tell me about the team behind spider bot project
+    - Who are  working on spider bot project?
+    - Details about the team members of the spider bot project
+    - spider bot project's members .
+    - Composition of the team working on spider bot project?
+    - Team for spider bot project?
+    - Responsibilities of the team members of spider bot project.
+    - Collaborators in the spider bot project?
+    - Team who made the spider bot project .
+
+- intent: SpiderBot_links
+  examples: |
+    - Video link for the spider bot project?
+    - Access of the video link for the spider bot project?
+    - Link for the project that demonstrates spider bot project .
+    - Share the video link for the spider bot project?
+    - Direct me to the video for the spider bot project?
+    - Link associated with spider bot project.
+    - Link for spider bot project?
+    - Provide me with the link showcasing spider bot project.
+    - Tell me about the link associated with spider bot project .
+
+#Robotic Arm Project
+
+- intent: RoboticArm_info
+  examples: |
+    - Robotic Arm Project .
+    - Purpose of the robotic arm project?
+    - Features of the robotic arm project?
+    - Components are used in robotic arm project?
+    - Details about the components of the robotic arm project ?
+    - About robotic arm project .
+    -  the robotic arm project view .
+    - What is the robotic arm project?
+    - Please tell me more about the robotic arm project .
+
+- intent: RoboticArm_member
+  examples: |
+    - Members of the robotic arm project?
+    - The team working on the robotic arm project
+    - About the people involved in the robotic arm project?
+    - The team behind robotic arm project
+    - Who are  working on robotic arm project?
+    - Details about the team members of robotic arm project
+    - Robotic arm project's members .
+    - Composition of the team working on robotic arm project?
+    - Team for robotic arm project.
+    - Backgrounds of the team members in robotic arm project?
+    - Collaborators in the robotic arm project?
+    - Team who completed robotic arm project.
+
+- intent: RoboticArm_link
+  examples: |
+    - Video link for robotic arm project ?
+    - Access of the video link for the robotic arm project?
+    - Demonstrates robotic arm project.
+    - Share the video link for the robotic arm project?
+    - Direct me to the video for the robotic arm project?
+    - The link associated with the robotic arm project .
+    - Access the link for the robotic arm project?
+    - Provide me with the link  showcasing robotic arm project?
+
+#About departments and their HODs 
+
+- intent: CSE_dept
+  examples: |
+    - Computer Science and Engineering Department .
+    - What kind of facilities does the CSE or Computer Science and Engineering Department have?
+    - Are there any research labs in the CSE or Computer Science and Engineering Department?
+    - Resources are available to students in the CSE or Computer Science and Engineering Department
+    - Professors in the CSE or Computer Science Department
+    - How experienced are the faculty members in the CSE or Computer Science and Engineering Department?
+    - The CSE or Computer Science and Engineering Department offers .
+    - Scope of the CSE or Computer Science and Engineering Department .
+    - Undergraduate programs offered by the CSE or Computer Science and Engineering Department.
+    - Tell me about the graduate programs in CSE or Computer Science and Engineering .
+    - Does the CSE or Computer Science and Engineering Department offer any research-based programs?
+    - How is Computer Science and Engineering Department at MNNIT ?
+    - About faculty of CSE or Computer Science and Engineering depatment .
+    - About faculty of Computer Science and Engineering Department .
+    - How is Computer Science and Engineering Department at Motilal Nehru National Institute of Technology ?
+    - CS at Motilal Nehru National Institute of Technology or MNNIT .
+    - Computer Science at MNNIT or Motilal Nehru National Institute of Technology .
+
+- intent: CSE_dept_HOD
+  examples: |
+    - Who is the head of department of Computer Science and Engineering Department ?
+    - HOD of Computer Science and Engineering Department .
+    - Head of department of CS or CSE .
+    - Faculty who is HOD of CSE Or Computer Science and Engineering Department at MNNIT or Motilal Nehru National Institute of Technology .
+    - What is the name of the head of the CSE department?
+    - Head of Department of CSE or Computer Science and Engineering depatment 
+
+- intent: ECE_dept
+  examples: |
+    - Facilities does the ECE or Electronics and Communication Engineering Department have?
+    - Electronics and Communication Engineering .
+    - Research labs in the ECE or Electronics and Communication Engineering Department
+    - Resources are available to students in the ECE Department
+    - Professors in the ECE Department?
+    - Faculty members in the ECE Department
+    - The ECE or Department offers
+    - Tell me about the ECE Department at Motilal Nehru National Institute of Technology or MNNIT .
+    - Scope of the ECE or Electronics and Communication Engineering Department?
+    - Undergraduate programs offered by the ECE Department .
+    - Tell me about the graduate programs in ECE or Electronics and Communication Engineering .
+    - Does the ECE or Electronics and Communication Engineering Department offer any research-based programs?
+    - How is Electronics and Communication Engineering Department at MNNIT ?
+    - About faculty of ECE or Electronics and Communication Engineering depatment .
+    - About faculty of Electronics and Communication Engineering Department .
+    - Electronics and Communication Engineering at Motilal Nehru National Institute of Technology 
+    - EC at Motilal Nehru National Institute of Technology or MNNIT .
+    - Electronics at MNNIT or Motilal Nehru National Institute of Technology .
+
+- intent: ECE_dept_HOD
+  examples: |
+    - Who is the head of department of Electronics and Communication Engineering Department ?
+    - HOD of Electronics and Communication Engineering Department .
+    - Head of department of Electronics and Communication Engineering Department .
+    - Faculty who is HOD of Electronics and Communication Engineering Department at MNNIT or Motilal Nehru National Institute of Technology .
+    - What is the name of the head of the ECE department?
+    - Head of Department of ECE or Electronics and Communication Engineering Department .
+
+- intent: EE_dept
+  examples: |
+    - Facilities does the EE or Electrical Engineering Department have?
+    - Electrical Engineering .
+    - Research labs in the ECE or EE or Electrical Engineering Department
+    - Resources are available to students in the EE or Electrical Engineering Department
+    - Professors in the EE or Electrical Engineering Department?
+    - Faculty members in the EE or Electrical Engineering Department
+    - The EE or Electrical Engineering Department offers
+    - Tell me about the EE or Electrical Engineering Department at Motilal Nehru National Institute of Technology or MNNIT .
+    - Scope of the EE or Electrical Engineering?
+    - Undergraduate programs offered by the EE or Electrical Department?
+    - Tell me about the graduate programs in EE or Electrical Engineering?
+    - Does the EE or Electrical Engineering Department offer any research-base programs?
+    - How is EE or Electrical Engineering Department at MNNIT ?
+    - About faculty of EE or Electrical Engineering depatment .
+    - How is EE or Electrical Engineering at Motilal Nehru National Institute of Technology ?
+    - EE at Motilal Nehru National Institute of Technology or MNNIT .
+    - Electrical at MNNIT or Motilal Nehru National Institute of Technology .
+
+- intent: EE_dept_HOD
+  examples: |
+    - Who is the head of department of EE or Electrical Engineering Department ?
+    - HOD of Electrical Engineering Department .
+    - Head of department of EE or Electrical Engineering Department .
+    - Faculty who is HOD of EE Electrical Engineering Department at MNNIT or Motilal Nehru National Institute of Technology .
+    - What is the name of the head of the EE or Electrical Engineering Department department?
+    - Head of Department of EE or Electrical Engineering Department .
+
+- intent: ME_dept
+  examples: |
+    - Facilities does the ME or Mechanical Engineering Department have.
+    - Mechanical Engineering .
+    - Research labs in the ME or Mechanical Engineering Department
+    - Resources are available to students in the ME or Mechanical Engineering Department
+    - Professors in the ME or Mechanical Engineering Department .
+    - Faculty members in the ME or Mechanical Engineering Department .
+    - The ME or Mechanical Engineering Department offers .
+    - Tell me about the ME or Mechanical Engineering Department Department at Motilal Nehru National Institute of Technology or MNNIT .
+    - Scope of the ME or Mechanical Engineering Department
+    - Undergraduate programs offered by the ME or Mechanical Engineering Department
+    - Tell me about the graduate programs in ME or Mechanical Engineering Department
+    - Does the ME or Mechanical Engineering Department offer any research-base programs?
+    - How is ME or Mechanical Engineering Department at MNNIT ?
+    - About faculty of ME or Mechanical Engineering Department depatment .
+    - How is ME or Mechanical Engineering Department at Motilal Nehru National Institute of Technology ?
+    - ME at Motilal Nehru National Institute of Technology or MNNIT .
+    - Mechanical at MNNIT or Motilal Nehru National Institute of Technology .
+
+
+- intent: ME_dept_HOD
+  examples: |
+    - Who is the head of department of ME or Mechanical Engineering Department ?
+    - HOD of Mechanical Engineering Department .
+    - Head of department of ME or Mechanical Engineering Department .
+    - Faculty who is HOD of ME or Mechanical Engineering Department at MNNIT or Motilal Nehru National Institute of Technology .
+    - What is the name of the head of the ME or Mechanical Engineering Department department?
+    - Head of Department of ME or Mechanical Engineering Department .
+
+- intent: ChE_Dept
+  examples: |
+    - Facilities does the ChE or Chemical Engineering Department have.
+    - Chemical Engineering .
+    - Research labs in the ChE or Chemical Engineering Department
+    - Resources are available to students in the ChE or Chemical Engineering Department
+    - Professors in the ChE or Chemical Engineering Department .
+    - Faculty members in the ChE or Chemical Engineering Department .
+    - The ChE or Chemical Engineering Department offers .
+    - Tell me about the ChE or Chemical Engineering Department Department at Motilal Nehru National Institute of Technology or MNNIT .
+    - Scope of the ChE or Chemical Engineering Department
+    - Undergraduate programs offered by the ChE or Chemical Engineering Department
+    - Tell me about the graduate programs in ChE or Chemical Engineering Department
+    - Does the ChE or Chemical Engineering Department offer any research-base programs?
+    - How is ChE or Chemical Engineering Department at MNNIT ?
+    - About faculty of ChE or Chemical Engineering Department depatment .
+    - How is ChE or Chemical Engineering Department at Motilal Nehru National Institute of Technology ?
+    - Chemical at MNNIT or Motilal Nehru National Institute of Technology .
+
+- intent: ChE_Dept_HOD
+  examples: |
+    - Who is the head of department of ChE or Chemical Engineering Department ?
+    - HOD of Chemical Engineering Department .
+    - Head of department of ChE or Chemical Engineering Department .
+    - Faculty who is HOD of ChE or Chemical Engineering Department at MNNIT or Motilal Nehru National Institute of Technology .
+    - What is the name of the head of the ChE or Chemical Engineering Department department?
+    - Head of Department of ChE or Chemical Engineering Department .
+
+- intent: CE_dept
+  examples: |
+    - Facilities does the CE or Civil Engineering Department have.
+    - Civil Engineering .
+    - Research labs in the CE or Civil Engineering Department
+    - Resources are available to students in the CE or Civil Engineering Department
+    - Professors in the CE or Civil Engineering Department .
+    - Faculty members in the CE or Civil Engineering Department .
+    - CE or Civil Engineering offers .
+    - Tell me about the CE or Civil Engineering Department Department at Motilal Nehru National Institute of Technology or MNNIT .
+    - Scope of the CE or Civil Engineering Department
+    - Undergraduate programs offered by the CE or Civil Engineering Department
+    - Tell me about the graduate programs in CE or Civil Engineering Department
+    - Does the CE or Civil Engineering Department offer any research-base programs?
+    - How is CE or Civil Engineering Department at MNNIT ?
+    - About faculty of CE or Civil Engineering depatment .
+    - How is CE or Civil Engineering Department at Motilal Nehru National Institute of Technology ?
+    - Civil at MNNIT or Motilal Nehru National Institute of Technology .
+
+- intent: CE_dept_HOD
+  examples: |
+    - Who is the head of department of CE or Civil Engineering Department ?
+    - HOD of Civil Engineering Department .
+    - Head of department of CE or Civil Engineering Department .
+    - Faculty who is HOD of CE or Civil Engineering Department at MNNIT or Motilal Nehru National Institute of Technology .
+    - What is the name of the head of the CE or Civil Engineering Department department?
+    - Head of Department of CE or Civil Engineering Department .
+
+- intent: BE_dept
+  examples: |
+    - Facilities does the Biotechnology Engineering Department have.
+    - Biotech .
+    - Biotechnology Engineering .
+    - Research labs in the Biotechnology Engineering Department
+    - Resources are available to students in the Biotechnology Engineering Department
+    - Professors in the Biotechnology Engineering Department .
+    - Faculty members in the Biotechnology Engineering Department .
+    - Biotechnology Engineering offers .
+    - Tell me about the Biotechnology Engineering Department Department at Motilal Nehru National Institute of Technology or MNNIT .
+    - Scope of the Biotechnology Engineering Department
+    - Undergraduate programs offered by the Biotechnology Engineering Department
+    - Tell me about the graduate programs in Biotechnology Engineering Department
+    - Does the Biotechnology Engineering Department offer any research-base programs?
+    - How is Biotechnology Engineering Department at MNNIT ?
+    - About faculty of Biotechnology Engineering depatment .
+    - How is Biotechnology Engineering Department at Motilal Nehru National Institute of Technology ?
+    - Biotech at MNNIT or Motilal Nehru National Institute of Technology .
+
+- intent: BE_dept_HOD
+  examples: |
+    - Who is the head of department of Biotechnology Engineering Department ?
+    - HOD of Biotechnology Engineering Department .
+    - Head of department of Biotechnology Engineering Department .
+    - Faculty who is HOD of Biotechnology Engineering Department at MNNIT or Motilal Nehru National Institute of Technology .
+    - What is the name of the head of the Biotechnology Engineering Department department?
+    - Head of Department of Biotechnology Engineering Department .
+
+- intent: PIE_dept
+  examples: |
+    - Facilities does the Production and Industrial Engineering Department have.
+    - PIE or Production and Industrial Engineering Department
+    - Production Engineering.
+    - Production and Industrial Engineering.
+    - Research labs in the Production and Industrial Engineering Department
+    - Resources are available to students in the Production and Industrial Engineering or production Department
+    - Professors in the Production and Industrial Engineering Department .
+    - Faculty members in the Production and Industrial Engineering Department .
+    - Production and Industrial Engineering Engineering offers .
+    - Tell me about the Production and Industrial Engineering Department at Motilal Nehru National Institute of Technology or MNNIT .
+    - Scope of the Production and Industrial Engineering Department
+    - Undergraduate programs offered by the Production and Industrial Engineering Department
+    - Tell me about the graduate programs in Production or Production and Industrial Engineering Department
+    - Does the Production and Industrial Engineering Department offer any research-base programs?
+    - How is Production and Industrial Engineering Department at MNNIT ?
+    - About faculty of Production and Industrial Engineering depatment .
+    - How is Production and Industrial Engineering Department at Motilal Nehru National Institute of Technology ?
+    - Production at MNNIT or Motilal Nehru National Institute of Technology .
+
+- intent: PIE_dept_HOD
+  examples: |
+    - Who is the head of department of PIE or Production and Industrial Engineering Department Department ?
+    - HOD of Production and Industrial Engineering Department .
+    - Head of department of PIE or Production and Industrial Engineering Department Department .
+    - Faculty who is HOD of PIE or Production and Industrial Engineering Department at MNNIT or Motilal Nehru National Institute of Technology .
+    - What is the name of the head of the PIE or Production and Industrial Engineering Department department?
+    - Head of Department of PIE or Production and Industrial Engineering Department .
+
+- intent: fc
+  examples: |
+     - Who is event coordinator ?
+     - Who is in charge of the BotRush event?
+     - Who is coordinator of the BotRush event?
+     - Can you tell me who is the coordinator for the BotRush event?
+     - I'm curious, who's managing the BotRush event?
+     - Who is responsible for organizing the BotRush event?
+     - event-coordinator of botrush event
+     - Event- coordinator of botrush event?
+     - Who is event coordinator of botrush?
+     - What is event coordinator of botrush event?
+     - Who is event coordinator of BotRush?
+
